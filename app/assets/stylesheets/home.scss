@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-color: #FFF4D7; //F7D7CD;
+  background-color: white; //F7D7CD;
   // background: linear-gradient(#ffffff, #EFE7E6);
 }
 
@@ -14,10 +14,21 @@ body {
 
 }
 
+.wrap {
+
+}
+
+.work-cover {
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  background-color: red;
+  z-index: 100;
+}
+
 .work-type {
   width: 280px;
   height: 448px;
-
   float: left;
   background-color: green;
   display: block;
@@ -28,8 +39,8 @@ body {
   overflow: hidden;
 }
 
-.work-type:hover {
-  height: 448px;
+.work-type:hover .work-cover{
+  height: 0px;
   transition: height 0.4s;
 }
 
@@ -42,8 +53,14 @@ body {
 .work-cover {
   width: 280px;
   height: 400px;
-  background-color: red;
+  background-color: white;
+}
 
+.work-title {
+  width: 280px;
+  height: 48px;
+  background-color: red;
+  z-index: 100;
 }
 
 img {
