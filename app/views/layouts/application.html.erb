@@ -9,24 +9,14 @@
 </head>
 <body>
   <div id="navbar">
-    <div id="logo">
 
+    <div id="logo">
       <%= button_to "", home_path,
             :class => "home_button", :method => :get %>
       <img src="logo2.png">
-
     </div>
 
-
-
-    <ul>
-      <li> <%=link_to "about", about_path%> </li>
-      <li> <%= link_to "fine art", arts_index_path %> </li>
-      <li> <%= link_to "web dev", webs_index_path %> </li>
-      <li> <%= link_to "graphic design", designs_index_path %> </li>
-    </ul>
   </div>
-
 
 <%= yield %>
 

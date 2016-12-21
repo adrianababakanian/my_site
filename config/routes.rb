@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'webs/index', to: 'webs#index', as: 'webs_index'
   get 'arts/index', to: 'arts#index', as: 'arts_index'
   get 'about/index', to: 'about#index', as: 'about'
+  get 'menu/index', to: 'menu#index', as: 'menu'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
