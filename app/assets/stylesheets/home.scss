@@ -7,15 +7,18 @@ body {
   // background: linear-gradient(#ffffff, #EFE7E6);
 }
 
+
 #wrapper {
   width: 900px;
   height: 100px;
   margin: 0 auto;
-
 }
 
-.wrap {
-
+#wrap {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 40px;
+  // background-color: blue;
 }
 
 .work-cover {
@@ -47,7 +50,6 @@ body {
 .work-wrapper {
   width: 280px;
   height: 448px;
-  background-color: blue;
 }
 
 .work-cover {
@@ -111,4 +113,131 @@ img {
 
 .big_button:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.h-wrap{
+  width: 130px;
+  height: 45px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.h-box{
+  width: 130px;
+  height: 45px;
+  background-color: white;
+  border: solid #D3ECE8;
+  border-width: 3px;
+  position: absolute;
+  line-height: 45px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.h-text {
+  z-index: 5;
+}
+
+.h-back {
+  z-index: 4;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.h-text:hover {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.h-box:hover ~ .h-back {
+  background-color: #E6EDE9;
+}
+
+#hello {
+  width: 800px;
+  height: 400px;
+}
+
+.color-box {
+  float: left;
+  width: 500px;
+  height: 400px;
+  background-color: #D3ECE8;
+  float: left;
+}
+
+.text-box {
+  height: 400px;
+  width: 270px;
+  margin-left: 30px;
+  float: left;
+}
+
+h1 {
+  font-family: Puritan;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+#graphic {
+  margin-left: 750px;
+  margin-top: -40px;
+  width: 350px;
+  height: 350px;
+  background-color: #FFEECB;
+  position: relative;
+}
+
+#sushi-wrap {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 25px;
+  z-index: 3;
+}
+
+#graphic-text {
+  margin-top: 100px;
+  width: 50px;
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-family: Puritan;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 40px;
+  z-index: 2;
+}
+
+#g-text-2 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-family: Puritan;
+  font-weight: bold;
+  margin-top: 90px;
+  margin-left: -40px;
+  background-color: #FFEECB;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#graphic:hover #graphic-text{
+  margin-top: 15px;
+  transition: .5s;
+}
+
+#graphic:hover #g-text-2 {
+  margin-left: -65px;
+  margin-top: 70px;
+  transition: .5s;
+}
+
+#b-expand {
+  border: solid #FFEECB;
+  border-width: 3px;
+  width: 100%;
+  height: 100%;
 }
