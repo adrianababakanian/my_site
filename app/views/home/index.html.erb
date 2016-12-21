@@ -2,16 +2,20 @@
 
   <div id="wrapper">
       <div class="work-type" id="left">
+        <div class="work-cover"></div>
+        <div class="work-title"></div>
         <img src="designs3.png">
         <%= button_to "graphic design", designs_index_path,
               :class => "big_button", :method => :get %>
       </div>
       <div class="work-type" id="middle">
+        <div class="work-cover"></div>
         <img src="webdev.png">
         <%= button_to "web dev", webs_index_path,
               :class => "big_button", :method => :get %>
       </div>
       <div class="work-type" id="right">
+        <div class="work-cover"></div>
         <img src="arts.png">
         <%= button_to "fine arts", arts_index_path,
               :class => "big_button", :method => :get %>
