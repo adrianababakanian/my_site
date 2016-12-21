@@ -1,0 +1,21 @@
+<body>
+
+  <div id="wrapper">
+      <div class="work-type" id="left">
+        <img src="designs3.png">
+        <%= button_to "graphic design", designs_index_path,
+              :class => "big_button", :method => :get %>
+      </div>
+      <div class="work-type" id="middle">
+        <img src="webdev.png">
+        <%= button_to "web dev", webs_index_path,
+              :class => "big_button", :method => :get %>
+      </div>
+      <div class="work-type" id="right">
+        <img src="arts.png">
+        <%= button_to "fine arts", arts_index_path,
+              :class => "big_button", :method => :get %>
+      </div>
+  </div>
+
+</body>

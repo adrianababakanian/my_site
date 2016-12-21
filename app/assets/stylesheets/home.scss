@@ -1,0 +1,97 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-color: #FFF4D7; //F7D7CD;
+  // background: linear-gradient(#ffffff, #EFE7E6);
+}
+
+#wrapper {
+  width: 900px;
+  height: 100px;
+  margin: 0 auto;
+
+}
+
+.work-type {
+  width: 280px;
+  height: 448px;
+
+  float: left;
+  background-color: green;
+  display: block;
+  text-align: center;
+  line-height: 360px;
+  font-family: Alegreya Sans;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-type:hover {
+  height: 448px;
+  transition: height 0.4s;
+}
+
+.work-wrapper {
+  width: 280px;
+  height: 448px;
+  background-color: blue;
+}
+
+.work-cover {
+  width: 280px;
+  height: 400px;
+  background-color: red;
+
+}
+
+img {
+  position: absolute;
+  height: 100%;
+  // margin-left: -113px;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+#left {
+  margin-left: 0px;
+  margin-right: 15px;
+}
+
+#middle {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#right {
+  margin-left: 15px;
+
+}
+
+.big_button {
+  position: absolute;
+  width: 280px;
+  height: 448px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: transparent;
+  float: left;
+  text-align: center;
+  font-family: Alegreya Sans;
+  margin-left: -140px;
+  color: #454545;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.big_button:focus {
+  outline: none;
+}
+
+.big_button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

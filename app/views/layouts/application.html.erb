@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MySite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans">
+</head>
+<body>
+  <div id="navbar">
+    <div id="logo">
+
+      <%= button_to "", home_path,
+            :class => "home_button", :method => :get %>
+      <img src="logo2.png">
+
+    </div>
+
+
+    
+    <ul>
+      <li> <%=link_to "about", about_path%> </li>
+      <li> <%= link_to "fine art", arts_index_path %> </li>
+      <li> <%= link_to "web dev", webs_index_path %> </li>
+      <li> <%= link_to "graphic design", designs_index_path %> </li>
+    </ul>
+  </div>
+
+
+<%= yield %>
+
+</body>
+</html>
