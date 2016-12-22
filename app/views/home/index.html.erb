@@ -20,14 +20,47 @@
       </div>
     </div>
 
+    <div id="zag"> <img src="zag.png"> </div>
+
 
     <div id="graphic">
       <div id="graphic-text">graphic</div>
       <div id="g-text-2">design</div>
       <div id="sushi-wrap">
         <img src="dragon.png">
-      </dzv>
+      </div>
     </div>
+
+    <div id="dev-wrapper">
+      <div id="dev-img"><img src="webdev.png"></div>
+      <div id="dev-text">
+        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px">web dev</h1>
+        <p style="color:white;padding:40px;padding-top:0px;font-size:16px">I coded up this site from scratch - check out
+          some of my other projects too! </p>
+      </div>
+    </div>
+
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+      <script>
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(20, 20);
+        ctx.lineTo(40, 0);
+        ctx.lineTo(60, 20);
+        ctx.lineTo(80, 0);
+        ctx.lineTo(100, 20);
+        ctx.lineTo(120, 0);
+        ctx.lineTo(140, 20);
+        ctx.lineTo(160, 0);
+        ctx.moveTo(0, 40);
+        ctx.lineTo(20, 60);
+        ctx.stroke();
+
+      </script>
+
   </div>
 
   <div id="wrapper">
