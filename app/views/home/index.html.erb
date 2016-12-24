@@ -4,6 +4,16 @@
 </head>
 
 <body>
+  <div class="fix">
+    <div class="h-wrap" id="fixed">
+      <div class="h-box h-text" id="fixed-h"> <b>portfolio</b> </div>
+      <div class="h-box h-back" id="fixed-h"></div>
+    </div>
+    <div class="h-wrap" id="fixed">
+      <div class="h-box h-text" id="fixed-h"> <b>about me</b> </div>
+      <div class="h-box h-back" id="fixed-h"></div>
+    </div>
+  </div>
   <div id="wrap">
     <div id="hello">
       <div class="color-box"></div>
@@ -26,6 +36,7 @@
     <div id="graphic">
       <div id="graphic-text">graphic</div>
       <div id="g-text-2">design</div>
+      <div id="g-sub-text"> icons, doodles, you name it </div>
       <div id="sushi-wrap">
         <img src="dragon.png">
       </div>
@@ -40,23 +51,50 @@
       </div>
     </div>
 
-    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+    <div id="fine-wrapper">
+      <div id="fine-img-wrap">
+        <div id="fine-img"><img src="arts.png"></div>
+      </div>
+      <div id="pallet"><img src="pallet.png"></div>
+      <div id="fine-text">
+        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px;margin-left:10px">fine art</h1>
+        <p style="color:white;padding:40px;padding-top:0px;font-size:16px;width:180px;margin-top:-20px">As much as I hover over
+        my tablet and keyboard, there's nothing quite like the organic. </p>
+      </div>
+    </div>
+
+    <div id="marketing-wrapper">
+      <div id="marketing-text"> marketing </div>
+      <div id="marketing-img"><img src="marketing.png"></div>
+    </div>
+
+  </div>
+
+    <canvas id="myCanvas" width="120" height="150" style="border:1px solid #d3d3d3;">
       <script>
 
         var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
         ctx.beginPath();
         ctx.moveTo(0, 0);
-        ctx.lineTo(20, 20);
-        ctx.lineTo(40, 0);
-        ctx.lineTo(60, 20);
-        ctx.lineTo(80, 0);
-        ctx.lineTo(100, 20);
+        ctx.lineTo(15, 15);
+        ctx.lineTo(30, 0);
+        ctx.lineTo(45, 15);
+        ctx.lineTo(60, 0);
+        ctx.lineTo(75, 15);
+        ctx.lineTo(90, 0);
+        ctx.lineTo(105, 15);
         ctx.lineTo(120, 0);
-        ctx.lineTo(140, 20);
-        ctx.lineTo(160, 0);
-        ctx.moveTo(0, 40);
-        ctx.lineTo(20, 60);
+        ctx.moveTo(0, 30);
+        ctx.lineTo(15, 45);
+        ctx.lineTo(30, 30);
+        ctx.lineTo(45, 45);
+        ctx.lineTo(60, 30);
+        ctx.lineTo(75, 45);
+        ctx.lineTo(90, 30);
+        ctx.lineTo(105, 47);
+        ctx.lineTo(120, 30);
+
         ctx.stroke();
 
       </script>
