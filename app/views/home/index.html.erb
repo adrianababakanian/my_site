@@ -1,4 +1,179 @@
+<head>
+  <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
 <body>
+  <div class="fix">
+    <div class="h-wrap" id="fixed">
+      <div class="h-box h-text" id="fixed-h"> <b>portfolio</b> </div>
+      <div class="h-box h-back" id="fixed-h"></div>
+    </div>
+    <div class="h-wrap" id="fixed">
+      <div class="h-box h-text" id="fixed-h"> <b>about me</b> </div>
+      <div class="h-box h-back" id="fixed-h"></div>
+    </div>
+  </div>
+  <div id="wrap">
+    <div id="hello">
+      <div class="color-box"></div>
+      <div class="text-box">
+        <h1> Hello world! </h1>
+        <p> I'm Adriana, a user experience engineer, graphic designer, and web
+          developer studying Math & Computer Science at the University of
+          California, Berkeley. If you like elephants, enamel pins, shrimp
+          tempura, or string lights, consider me your new best friend. </p>
+        <div class="h-wrap">
+          <div class="h-box h-text"> <b>about me</b> </div>
+          <div class="h-box h-back"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="zag"> <img src="zag.png"> </div>
+
+
+    <div id="graphic">
+      <div class="pop" id="one"><img src="sushi.png"></div>
+      <div id="graphic-text">design</div>
+      <div id="chop"><img src="chop.png"></div>
+      <div id="g-sub-text"> Icons, doodles, random whimsical ideas - you name it. </div>
+      <div id="sushi-wrap">
+        <img src="dragon.png">
+      </div>
+    </div>
+
+    <div id="dev-wrapper">
+      <div id="dev-img"><img src="webdev.png"></div>
+      <div id="code"><img src="code.png"></div>
+      <div id="dev-text">
+        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px">web dev</h1>
+        <p style="color:white;padding:40px;padding-top:0px;font-size:16px">I coded up this site from scratch - check out
+          some of my other projects too! </p>
+      </div>
+    </div>
+
+    <div id="fine-wrapper">
+      <div id="fine-img-wrap">
+        <div id="fine-img"><img src="arts.png"></div>
+      </div>
+      <div id="pallet"><img src="pallet.png"></div>
+      <div id="fine-text">
+        <h1 style="color:white;padding:30px;font-size:50px;padding-bottom:0px;margin-left:10px">fine art</h1>
+        <p style="color:white;padding:40px;padding-top:0px;font-size:16px;width:180px;margin-top:-20px">As much as I hover over
+        my tablet and keyboard, there's nothing quite like the organic. </p>
+      </div>
+    </div>
+
+    <div id="marketing-wrapper">
+      <div id="marketing-description"> Design with not just a purpose, but a message. </div>
+      <div id="marketing-text"> marketing </div>
+      <div id="bulb"><img src="bulb.png"></div>
+      <div id="marketing-img"><img src="marketing.png"></div>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <h1 style="color:white;text-align:center;padding-top:100px"> Let's get in touch! </h1>
+    <div id="contacts">
+      <div class="contact"><img src="be.png"></div>
+      <div class="contact"><img src="git.png"></div>
+      <div class="contact"><img src="pin.png"></div>
+      <div class="contact"><img src="in.png"></div>
+    </div>
+  </div>
+
+    <canvas id="myCanvas" width="120" height="150" style="border:1px solid #d3d3d3;">
+      <script>
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(15, 15);
+        ctx.lineTo(30, 0);
+        ctx.lineTo(45, 15);
+        ctx.lineTo(60, 0);
+        ctx.lineTo(75, 15);
+        ctx.lineTo(90, 0);
+        ctx.lineTo(105, 15);
+        ctx.lineTo(120, 0);
+        ctx.moveTo(0, 30);
+        ctx.lineTo(15, 45);
+        ctx.lineTo(30, 30);
+        ctx.lineTo(45, 45);
+        ctx.lineTo(60, 30);
+        ctx.lineTo(75, 45);
+        ctx.lineTo(90, 30);
+        ctx.lineTo(105, 47);
+        ctx.lineTo(120, 30);
+
+        ctx.stroke();
+
+        var t = 1;
+
+        // define the path to plot
+        var vertices = [];
+        vertices.push({
+            x: 0,
+            y: 0
+        });
+        vertices.push({
+            x: 15,
+            y: 15
+        });
+        vertices.push({
+            x: 30,
+            y: 0
+        });
+        vertices.push({
+            x: 45,
+            y: 15
+        });
+        vertices.push({
+            x: 60,
+            y: 0
+        });
+
+
+        function calcWaypoints(vertices) {
+          var waypoints = [];
+          for (var i = 1; i < vertices.length; i++) {
+              var pt0 = vertices[i - 1];
+              var pt1 = vertices[i];
+              var dx = pt1.x - pt0.x;
+              var dy = pt1.y - pt0.y;
+              for (var j = 0; j < 100; j++) {
+                  var x = pt0.x + dx * j / 100;
+                  var y = pt0.y + dy * j / 100;
+                  waypoints.push({
+                      x: x,
+                      y: y
+                  });
+              }
+          }
+          return (waypoints);
+        }
+
+
+      function animate() {
+          if (t < points.length - 1) {
+              requestAnimationFrame(animate);
+          }
+          // draw a line segment from the last waypoint
+          // to the current waypoint
+          ctx.beginPath();
+          ctx.moveTo(points[t - 1].x, points[t - 1].y);
+          ctx.lineTo(points[t].x, points[t].y);
+          ctx.stroke();
+          // increment "t" to get the next waypoint
+          t++;
+      }
+
+      </script>
+
+  </div>
 
   <div id="wrapper">
       <div class="work-type" id="left">
@@ -21,5 +196,7 @@
               :class => "big_button", :method => :get %>
       </div>
   </div>
+
+
 
 </body>

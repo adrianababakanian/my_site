@@ -14,17 +14,17 @@
  *= require_self
  */
 
-body {
+body, html {
   margin: 0 !important;
   padding: 0 !important;
+  color: #303030;
+  font-size: 14px;
+  font-family: Muli;
+  font-weight: 400;
 }
 
- div {
-   color: #454545;
-   font-size: 14px;
-   font-family: Alegreya Sans;
-   font-weight: 400;
- }
+
+
 
  .home_button {
    width: 100px;

@@ -7,15 +7,19 @@ body {
   // background: linear-gradient(#ffffff, #EFE7E6);
 }
 
+
 #wrapper {
   width: 900px;
   height: 100px;
   margin: 0 auto;
-
+  margin-top: 50px;
 }
 
-.wrap {
-
+#wrap {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 40px;
+  // background-color: blue;
 }
 
 .work-cover {
@@ -47,7 +51,6 @@ body {
 .work-wrapper {
   width: 280px;
   height: 448px;
-  background-color: blue;
 }
 
 .work-cover {
@@ -111,4 +114,506 @@ img {
 
 .big_button:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.h-wrap{
+  width: 130px;
+  height: 45px;
+  position: relative;
+  margin-top: 50px;
+
+}
+
+.h-box{
+  width: 130px;
+  height: 45px;
+  background-color: white;
+  border: solid #D3ECE8;
+  border-width: 3px;
+  position: absolute;
+  line-height: 45px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.h-text {
+  z-index: 5;
+}
+
+.h-back {
+  z-index: 4;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.h-text:hover {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.h-box:hover ~ .h-back {
+  background-color: #E6EDE9;
+}
+
+#hello {
+  width: 800px;
+  height: 400px;
+}
+
+.color-box {
+  float: left;
+  width: 500px;
+  height: 400px;
+  background-color: #D3ECE8;
+  float: left;
+}
+
+.text-box {
+  height: 400px;
+  width: 270px;
+  margin-left: 30px;
+  float: left;
+}
+
+h1 {
+  font-family: Puritan;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+#zag {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  margin-left: 900px;
+  margin-top: -200px;
+  display: none;
+}
+
+.pop {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transition: .5s;
+  display: none;
+}
+
+#one {
+  margin-top: 200px;
+  margin-left: 200px;
+  z-index: 100;
+}
+
+#graphic:hover #one {
+  margin-top: 80px;
+  margin-left: 80px;
+  transform: rotate(-30deg);
+  animation-timing-function: ease-in;
+  animation: float 8s infinite;
+}
+
+@keyframes float {
+  0%   {top: 25px;}
+  0% {left: 0px;}
+  50% {top: 0px;}
+  50% {left: 25px;}
+  100%   {top: 25px;}
+  100% {left: 0px;}
+}
+
+#graphic {
+  margin-left: 750px;
+  margin-top: -10px;
+  width: 380px;
+  height: 380px;
+  background-color: #FFEECB;
+  position: relative;
+  transition: .5s;
+}
+
+#g-back {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: -5px;
+  width: 345px;
+  height: 345px;
+  z-index: -1;
+  background-color: white;
+  border: solid #FFEECB;
+  border-width: 3px;
+}
+
+#sushi-wrap {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#graphic-text {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-family: Puritan;
+  font-weight: bold;
+  background-color: #FFEECB;
+  margin-top: 60px;
+  margin-left: 180px;
+  z-index: 2;
+  transition: .5s;
+}
+
+#g-text-2 {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-family: Puritan;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-left: 0px;
+  background-color: #FFEECB;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: .5s;
+}
+
+#g-sub-text {
+  position: absolute;
+  width: 100px;
+  color: white;
+  font-size: 16px;
+  margin-left: 210px;
+  margin-top: 120px;
+  text-align: right;
+  display: none;
+}
+
+#chop {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: 50;
+  margin-left: 50px;
+  margin-top: 120px;
+  transform: rotate(-20deg);
+}
+
+#graphic:hover #chop {
+  animation: up3 3s;
+}
+
+#graphic:hover #sushi-wrap {
+  margin-left: -40px;
+  transition: .5s;
+}
+
+#graphic:hover #g-sub-text {
+  display: block;
+  margin-left: 280px;
+}
+
+#graphic:hover #graphic-text{
+  margin-top: 40px;
+  margin-left: 250px;
+  transition: .5s;
+}
+
+#graphic:hover #g-text-2 {
+  margin-left: -40px;
+  margin-top: 35px;
+  transition: .5s;
+}
+
+// #graphic:hover {
+//   width:400px;
+//   height:400px;
+//   margin-left:740px;
+//   margin-top:-50px;
+//   transition: .5s;
+// }
+
+#graphic:hover {
+  width: 450px;
+  // height: 400px;
+  margin-left: 680px;
+  // margin-top: -30px;
+}
+
+#b-expand {
+  border: solid #FFEECB;
+  border-width: 3px;
+  width: 100%;
+  height: 100%;
+}
+
+#dev-wrapper {
+  width: 560px;
+  height: 600px;
+  position: relative;
+  margin-left: 80px;
+  margin-top: -150px;
+}
+
+#dev-img {
+  width: 300px;
+  height: 600px;
+  background-color: blue;
+  position: absolute;
+  transition: .5s;
+}
+
+#dev-text {
+  width: 300px;
+  height: 300px;
+  background-color: #F4D1C4;//#F9D9D9;
+  position: absolute;
+  margin-left: 260px;
+  margin-top: 140px;
+  text-align: center;
+  transition: .5s;
+}
+
+#code {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 50;
+  margin-left: 450px;
+  margin-top: 170px;
+  transform: rotate(20deg);
+}
+
+#dev-wrapper:hover #code {
+  animation: up2 2s;
+}
+
+#dev-wrapper:hover #dev-img{
+  width: 320px;
+  height: 640px;
+  transition: .5s;
+}
+
+#dev-wrapper:hover #dev-text{
+  width:290px;
+  height:290px;
+  transition: .5s;
+}
+
+#fine-wrapper {
+  width: 500px;
+  height: 400px;
+  margin-left: 550px;
+  margin-top: -200px;
+  position: relative;
+}
+
+#fine-img {
+  position: absolute;
+  width: 150px;
+  height: 300px;
+  margin-left: 75px;
+  margin-top: 50px;
+  transition: .5s;
+}
+
+#fine-img-wrap {
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  background-color: #9EC79B;
+  margin-left: 200px;
+}
+
+#fine-text {
+  width: 250px;
+  height: 250px;
+  background-color: #C6EFC2;
+  z-index: 4;
+  position: absolute;
+  margin-top: 280px;
+  margin-left: 50px;
+  transition: .5s;
+}
+
+#fine-wrapper:hover #fine-img{
+  width: 170px;
+  height: 340px;
+  transition: .5s;
+  margin-left: 65px;
+  margin-top: 30px;
+}
+
+#fine-wrapper:hover #fine-text {
+  width: 270px;
+  height: 270px;
+  transition: .5s;
+  margin-top: 220px;
+}
+
+#fine-wrapper:hover #pallet {
+  animation: up 2s;
+}
+
+#pallet {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin-top: 260px;
+  margin-left: 150px;
+  z-index: 50;
+}
+
+@keyframes up {
+  0%   {top: 0px;}
+  45%   {top: -150px;}
+  55% {top: -150px;}
+  100% {top: 0px;}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes up2 {
+  0%   {top: 0px;}
+  45%   {top: -80px;}
+  55% {top: -80px;}
+  100% {top: 0px;}
+  100% {transform: rotate(380deg);}
+}
+
+@keyframes up3 {
+  0%   {top: 0px;}
+  45%   {top: -180px;}
+  55% {top: -180px;}
+  100% {top: 0px;}
+  100% {transform: rotate(340deg);}
+}
+
+.fix {
+  width: 340px;
+  height: 100px;
+  // background-color: #A7C9D7;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  margin-left:-170px;
+  margin-top: 400px;
+}
+
+#fixed {
+  float: left;
+  padding: 20px;
+}
+
+#fixed-h {
+  border: solid #A7C9D7;
+}
+
+#marketing-wrapper {
+  width: 400px;
+  height: 400px;
+  background-color: #D3ECE8;
+  position: relative;
+  transition: .5s;
+}
+
+#marketing-img {
+  position: absolute;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
+}
+
+#marketing-text {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-family: Puritan;
+  font-weight: 800;
+  margin-top: 50px;
+  margin-left: 40px;
+  // background-color: #D3ECE8;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  transition: .5s;
+}
+
+#marketing-description {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  margin-top: 150px;
+  margin-left: 60px;
+  background-color: #D3ECE8;
+  width: 80px;
+  display: none;
+  transition: .5s;
+}
+
+#bulb {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 100;
+  transform: rotate(-20deg);
+  margin-left: 330px;
+  margin-top: 50px;
+  transition: .5s;
+}
+
+#marketing-wrapper:hover {
+  width: 480px;
+  transition: .5s;
+  margin-left: 10px;
+}
+
+#marketing-wrapper:hover #marketing-img {
+  margin-left: 50px;
+  transition: .5s;
+}
+
+#marketing-wrapper:hover #marketing-text {
+  margin-top: 15px;
+  transition: .5s;
+}
+
+#marketing-wrapper:hover #marketing-description {
+  margin-top: 100px;
+  display: block;
+  transition: .5s;
+}
+
+#marketing-wrapper:hover #bulb {
+  margin-left: 410px;
+  transition: .5s;
+  animation: up3 3s;
+}
+
+#footer {
+  height: 400px;
+  background-color: #D3ECE8;
+  margin-top: 100px;
+}
+
+#contacts {
+  width: 340px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+.contact {
+  width: 55px;
+  height: 55px;
+  z-index: 50;
+  position: relative;
+  float: left;
+  margin: 15px;
 }
