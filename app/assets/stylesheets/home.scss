@@ -491,6 +491,14 @@ h1 {
   100% {transform: rotate(340deg);}
 }
 
+@keyframes up4 {
+  0%   {top: 0px;}
+  45%   {top: -120px;}
+  55% {top: -120px;}
+  100% {top: 0px;}
+  100% {transform: rotate(340deg);}
+}
+
 .fix {
   width: 340px;
   height: 100px;
@@ -593,7 +601,7 @@ h1 {
 #marketing-wrapper:hover #bulb {
   margin-left: 410px;
   transition: .5s;
-  animation: up3 3s;
+  animation: up4 3s;
 }
 
 #footer {
@@ -616,4 +624,30 @@ h1 {
   position: relative;
   float: left;
   margin: 15px;
+}
+
+.flip {
+  width: 55px;
+  height: 55px;
+  display: none;
+}
+
+.circle {
+  width: 55px;
+  height: 55px;
+  background-color: blue;
+  z-index: 100;
+}
+
+.contact:hover {
+  display: hidden;
+}
+
+.contact:hover .flip {
+  display: block;
+  animation: spin 1s;
+}
+
+@keyframes spin {
+  100% {transform: rotate(360deg);}
 }
