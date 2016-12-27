@@ -14,7 +14,7 @@
  *= require_self
  */
 
-body {
+body, html {
   margin: 0 !important;
   padding: 0 !important;
   color: #303030;

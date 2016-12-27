@@ -36,7 +36,8 @@
     <div id="graphic">
       <div class="pop" id="one"><img src="sushi.png"></div>
       <div id="graphic-text">design</div>
-      <div id="g-sub-text"> icons, doodles, you name it </div>
+      <div id="chop"><img src="chop.png"></div>
+      <div id="g-sub-text"> Icons, doodles, random whimsical ideas - you name it. </div>
       <div id="sushi-wrap">
         <img src="dragon.png">
       </div>
@@ -65,11 +66,22 @@
     </div>
 
     <div id="marketing-wrapper">
-      <div id="marketing-description"> design with a message </div>
+      <div id="marketing-description"> Design with not just a purpose, but a message. </div>
       <div id="marketing-text"> marketing </div>
+      <div id="bulb"><img src="bulb.png"></div>
       <div id="marketing-img"><img src="marketing.png"></div>
     </div>
 
+  </div>
+
+  <div id="footer">
+    <h1 style="color:white;text-align:center;padding-top:100px"> Let's get in touch! </h1>
+    <div id="contacts">
+      <div class="contact"><img src="be.png"></div>
+      <div class="contact"><img src="git.png"></div>
+      <div class="contact"><img src="pin.png"></div>
+      <div class="contact"><img src="in.png"></div>
+    </div>
   </div>
 
     <canvas id="myCanvas" width="120" height="150" style="border:1px solid #d3d3d3;">
@@ -98,6 +110,66 @@
         ctx.lineTo(120, 30);
 
         ctx.stroke();
+
+        var t = 1;
+
+        // define the path to plot
+        var vertices = [];
+        vertices.push({
+            x: 0,
+            y: 0
+        });
+        vertices.push({
+            x: 15,
+            y: 15
+        });
+        vertices.push({
+            x: 30,
+            y: 0
+        });
+        vertices.push({
+            x: 45,
+            y: 15
+        });
+        vertices.push({
+            x: 60,
+            y: 0
+        });
+
+
+        function calcWaypoints(vertices) {
+          var waypoints = [];
+          for (var i = 1; i < vertices.length; i++) {
+              var pt0 = vertices[i - 1];
+              var pt1 = vertices[i];
+              var dx = pt1.x - pt0.x;
+              var dy = pt1.y - pt0.y;
+              for (var j = 0; j < 100; j++) {
+                  var x = pt0.x + dx * j / 100;
+                  var y = pt0.y + dy * j / 100;
+                  waypoints.push({
+                      x: x,
+                      y: y
+                  });
+              }
+          }
+          return (waypoints);
+        }
+
+
+      function animate() {
+          if (t < points.length - 1) {
+              requestAnimationFrame(animate);
+          }
+          // draw a line segment from the last waypoint
+          // to the current waypoint
+          ctx.beginPath();
+          ctx.moveTo(points[t - 1].x, points[t - 1].y);
+          ctx.lineTo(points[t].x, points[t].y);
+          ctx.stroke();
+          // increment "t" to get the next waypoint
+          t++;
+      }
 
       </script>
 
