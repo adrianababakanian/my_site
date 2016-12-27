@@ -611,7 +611,7 @@ h1 {
 }
 
 #contacts {
-  width: 340px;
+  width: 356px;
   height: 80px;
   margin: 0 auto;
   margin-top: -20px;
@@ -620,32 +620,50 @@ h1 {
 .contact {
   width: 55px;
   height: 55px;
+  border-radius: 100%;
+  border: 2px white solid;
   z-index: 50;
   position: relative;
   float: left;
   margin: 15px;
+  // background-color: blue;
 }
 
 .flip {
   width: 55px;
   height: 55px;
   display: none;
+  z-index: 500;
+  // background-color: red;
 }
 
 .circle {
   width: 55px;
   height: 55px;
-  background-color: blue;
-  z-index: 100;
+  background-color: white;
+  transition: .5s;
+  border-radius: 100%;
+  border: 2px white solid;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
 }
 
 .contact:hover {
   display: hidden;
 }
 
+.contact:hover .circle {
+  width: 0px;
+  height: 0px;
+  transition: .5s;
+  border: none;
+}
+
 .contact:hover .flip {
   display: block;
-  animation: spin 1s;
 }
 
 @keyframes spin {
