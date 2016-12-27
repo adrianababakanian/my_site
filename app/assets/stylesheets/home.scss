@@ -189,11 +189,44 @@ h1 {
   margin-top: -200px;
 }
 
+.pop {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transition: .5s;
+}
+
+#one {
+  margin-top: 200px;
+  margin-left: 200px;
+  z-index: 100;
+}
+
+#graphic:hover #one {
+  margin-top: 80px;
+  margin-left: 80px;
+  transform: rotate(-30deg);
+  animation-timing-function: ease-in;
+  animation: float 8s infinite;
+}
+
+@keyframes popandback {
+}
+
+@keyframes float {
+  0%   {top: 25px;}
+  0% {left: 0px;}
+  50% {top: 0px;}
+  50% {left: 25px;}
+  100%   {top: 25px;}
+  100% {left: 0px;}
+}
+
 #graphic {
   margin-left: 750px;
   margin-top: -10px;
-  width: 350px;
-  height: 350px;
+  width: 380px;
+  height: 380px;
   background-color: #FFEECB;
   position: relative;
   transition: .5s;
@@ -215,9 +248,10 @@ h1 {
   width: 300px;
   height: 300px;
   position: absolute;
-  margin-left: 25px;
-  margin-top: 25px;
   z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #graphic-text {
@@ -227,11 +261,8 @@ h1 {
   font-family: Puritan;
   font-weight: bold;
   background-color: #FFEECB;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  margin-top: 10px;
-  margin-left: 60px;
+  margin-top: 50px;
+  margin-left: 40px;
   z-index: 2;
   transition: .5s;
 }
@@ -243,7 +274,7 @@ h1 {
   font-family: Puritan;
   font-weight: bold;
   margin-top: 60px;
-  margin-left: -30px;
+  margin-left: 0px;
   background-color: #FFEECB;
   padding-left: 20px;
   padding-top: 10px;
@@ -267,7 +298,7 @@ h1 {
 }
 
 #graphic:hover #graphic-text{
-  margin-top: -20px;
+  margin-top: 20px;
   transition: .5s;
 }
 
@@ -277,13 +308,13 @@ h1 {
   transition: .5s;
 }
 
-#graphic:hover {
-  width:360px;
-  height:360px;
-  margin-left:740px;
-  margin-top:-50px;
-  transition: .5s;
-}
+// #graphic:hover {
+//   width:400px;
+//   height:400px;
+//   margin-left:740px;
+//   margin-top:-50px;
+//   transition: .5s;
+// }
 
 #graphic:hover ~ #dev-wrapper {
 
@@ -321,6 +352,20 @@ h1 {
   margin-top: 140px;
   text-align: center;
   transition: .5s;
+}
+
+#code {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 50;
+  margin-left: 450px;
+  margin-top: 170px;
+  transform: rotate(20deg);
+}
+
+#dev-wrapper:hover #code {
+  animation: up2 2s;
 }
 
 #dev-wrapper:hover #dev-img{
@@ -386,13 +431,33 @@ h1 {
   margin-top: 220px;
 }
 
+#fine-wrapper:hover #pallet {
+  animation: up 2s;
+}
+
 #pallet {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-top: 260px;
-  margin-left: 130px;
+  margin-left: 150px;
   z-index: 50;
+}
+
+@keyframes up {
+  0%   {top: 0px;}
+  45%   {top: -150px;}
+  55% {top: -150px;}
+  100% {top: 0px;}
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes up2 {
+  0%   {top: 0px;}
+  45%   {top: -80px;}
+  55% {top: -80px;}
+  100% {top: 0px;}
+  100% {transform: rotate(380deg);}
 }
 
 .fix {
@@ -455,7 +520,6 @@ h1 {
   font-size: 16px;
   // margin-left: 0px;
   // margin-top: 315px;
-  margin-left: -100px;
   margin-top: 300px;
   display: none;
   transition: .5s;
@@ -468,16 +532,15 @@ h1 {
 }
 
 #marketing-wrapper:hover {
-  width: 360px;
-  height: 360px;
+  width: 380px;
+  height: 380px;
   transition: .5s;
   margin-left: 10px;
 }
 
 #marketing-wrapper:hover #marketing-text {
-  margin-top: -20px;
+  margin-top: 5px;
   transition: .5s;
-  margin-left: 70px;
 }
 
 #marketing-wrapper:hover #marketing-description {
