@@ -611,7 +611,7 @@ h1 {
 }
 
 #contacts {
-  width: 356px;
+  width: 445px;//356px;
   height: 80px;
   margin: 0 auto;
   margin-top: -20px;
@@ -641,7 +641,6 @@ h1 {
   width: 55px;
   height: 55px;
   background-color: white;
-  transition: .5s;
   border-radius: 100%;
   border: 2px white solid;
   top: 50%;
@@ -651,14 +650,10 @@ h1 {
 
 }
 
-.contact:hover {
-  display: hidden;
-}
-
 .contact:hover .circle {
   width: 0px;
   height: 0px;
-  transition: .5s;
+  transition: .3s;
   border: none;
 }
 
@@ -668,4 +663,14 @@ h1 {
 
 @keyframes spin {
   100% {transform: rotate(360deg);}
+}
+
+.hide {
+  width: 55px;
+  height: 55px;
+  position: relative;
+}
+
+.contact:hover .hide {
+  display: none
 }
