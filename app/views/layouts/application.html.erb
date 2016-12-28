@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css?family=Puritan">
 </head>
 <body>
+
+  <div id="nav">
+    <div class="underline"> Portfolio </div>
+    <div class="underline"> About Me </div>
+    <div id="nav-logo"><img src="logo2.png"></div>
+  </div>
+
   <div id="navbar">
 
     <div id="logo">
@@ -25,3 +32,14 @@
 
 </body>
 </html>
+
+<script>
+  var $logo = $('#nav-logo');
+  var $nav = $('#nav');
+  $(document).scroll(function() {
+    $logo.css({height: $(this).scrollTop() > 1? "40px":"60px"});
+  });
+  $(document).scroll(function() {
+    $nav.css({height: $(this).scrollTop() > 1? "80px":"100px"});
+  });
+</script>
