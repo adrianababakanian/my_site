@@ -47,4 +47,51 @@
     $nav.css({height: $(this).scrollTop() > 1? "80px":"100px"});
   });
 
+  $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('#graphic').offset().top - 300) {
+            $("#graphic").css("width","450px");
+            $("#graphic").css("margin-left","680px");
+            $("#graphic-text").css("margin-top","40px");
+            $("#graphic-text").css("margin-left","250px");
+            $("#graphic-sub-text").css("margin-top","40px");
+            $("#graphic-sub-text").css("margin-left","250px");
+            $("#sushi-wrap").css("margin-left","-40px");
+        } else if(isHovered){
+            $("#graphic").css("width","450px");
+            $("#graphic").css("margin-left","680px");
+            $("#graphic-text").css("margin-top","40px");
+            $("#graphic-text").css("margin-left","250px");
+            $("#graphic-sub-text").css("margin-top","40px");
+            $("#graphic-sub-text").css("margin-left","250px");
+        } else {
+            $("#graphic").css("width","380px");
+            $("#graphic").css("margin-left","750px");
+            $("#graphic-text").css("margin-top","60px");
+            $("#graphic-text").css("margin-left","180px");
+        }
+      });
+    });
+
+  // $("#graphic").hover(function(){
+  //     $(this).css("background-color", "yellow");
+  //     $("#graphic").css("width","450px");
+  //     $("#graphic").css("margin-left","680px");
+  //     $("#graphic-text").css("margin-top","40px");
+  //     $("#graphic-text").css("margin-left","250px");
+  //     $("#graphic-sub-text").css("margin-top","40px");
+  //     $("#graphic-sub-text").css("margin-left","250px");
+  //     $("#sushi-wrap").css("margin-left","-40px");
+  //     }, function(){
+  //     $(this).css("background-color", "pink");
+  //     $("#graphic").css("width","380px");
+  //     $("#graphic").css("margin-left","750px");
+  //     $("#graphic-text").css("margin-top","60px");
+  //     $("#graphic-text").css("margin-left","180px");
+  // });
+
+  $('#graphic').hover(
+       function(){ $(this).addClass('graphic-hover') },
+  )
+
 </script>
