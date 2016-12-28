@@ -34,12 +34,17 @@
 </html>
 
 <script>
+
   var $logo = $('#nav-logo');
   var $nav = $('#nav');
+  var isHovered = $('#graphic').is(":hover");
+
   $(document).scroll(function() {
     $logo.css({height: $(this).scrollTop() > 1? "40px":"60px"});
   });
+
   $(document).scroll(function() {
     $nav.css({height: $(this).scrollTop() > 1? "80px":"100px"});
   });
+
 </script>
