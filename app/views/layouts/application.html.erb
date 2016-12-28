@@ -54,24 +54,28 @@
             $("#graphic").css("margin-left","680px");
             $("#graphic-text").css("margin-top","40px");
             $("#graphic-text").css("margin-left","250px");
-            $("#graphic-sub-text").css("margin-top","40px");
-            $("#graphic-sub-text").css("margin-left","250px");
+            $("#g-sub-text").css("display","block");
+            $("#g-sub-text").css("margin-left","280px");
             $("#sushi-wrap").css("margin-left","-40px");
         } else if(isHovered){
             $("#graphic").css("width","450px");
             $("#graphic").css("margin-left","680px");
             $("#graphic-text").css("margin-top","40px");
             $("#graphic-text").css("margin-left","250px");
-            $("#graphic-sub-text").css("margin-top","40px");
-            $("#graphic-sub-text").css("margin-left","250px");
+            $("#g-sub-text").css("display","none");
+            $("#g-sub-text").css("margin-left","280px");
+            $("#sushi-wrap").css("margin-left","40px");
         } else {
             $("#graphic").css("width","380px");
             $("#graphic").css("margin-left","750px");
             $("#graphic-text").css("margin-top","60px");
             $("#graphic-text").css("margin-left","180px");
+            $("#g-sub-text").css("display","none");
+            $("#g-sub-text").css("margin-left","280px");
+            // $("#sushi-wrap").css("margin-left","40px");
         }
-      });
     });
+  });
 
   // $("#graphic").hover(function(){
   //     $(this).css("background-color", "yellow");
@@ -89,9 +93,9 @@
   //     $("#graphic-text").css("margin-top","60px");
   //     $("#graphic-text").css("margin-left","180px");
   // });
-
-  $('#graphic').hover(
-       function(){ $(this).addClass('graphic-hover') },
-  )
+  //
+  // $('#graphic').hover(
+  //      function(){ $(this).addClass('graphic-hover') },
+  // )
 
 </script>
