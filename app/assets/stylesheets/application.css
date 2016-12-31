@@ -38,13 +38,13 @@ body, html {
 #nav-copy {
   width: 100%;
   height: 100px;
-  background-color: none;
   position:fixed;
   margin-top: 0px;
   z-index: 500;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #DCEBF7;
+  opacity: 0;
 }
 
 #nav-logo {

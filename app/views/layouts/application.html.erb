@@ -53,23 +53,23 @@
 
 
   $(document).scroll(function() {
-    $logo.animate({"height": $(this).scrollTop() > 0? "40px":"60px"}, 300);
+    $logo.animate({"height": $(this).scrollTop() > 0? "40px":"60px"}, 400);
   });
 
   $(document).scroll(function() {
-    $nav.animate({height: $(this).scrollTop() > 1? "80px":"100px"}, 300);
+    $nav.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
   });
 
   $(document).scroll(function() {
-    $nav.animate({height: $(this).scrollTop() > 1? "80px":"100px"}, 100);
+    $nav.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
   });
 
   $(document).scroll(function() {
-    $navc.animate({height: $(this).scrollTop() > 1? "80px":"100px"}, 100);
+    $navc.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
   });
 
   $(document).scroll(function() {
-    $navc.animate({display: $(this).scrollTop() > 1? "block":"none"}, 300);
+    $navc.animate({opacity: $(this).scrollTop() > 0? "1":"0"});
   });
 
   $(function(){
