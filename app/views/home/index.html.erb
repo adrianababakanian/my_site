@@ -218,3 +218,20 @@
   </div>
 
 </body>
+
+<script>
+
+  var $fix = $('.fix');
+  var $foot = $('#footer');
+
+  $(function(){
+    $($fix).scroll(function(){
+        if($(this).scrollTop() >= $($foot).offset().top) {
+            $($fix).css("opacity","0");
+        } else {
+            $($fix).css("opacity","1");
+        }
+    });
+  });
+
+</script>
