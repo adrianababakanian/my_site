@@ -13,19 +13,13 @@
 <body>
 
   <div id="nav">
-    <div class="underline"> Portfolio </div>
-    <div class="underline"> About Me </div>
+    <div id="nav-copy"></div>
+    <div class="under" id="nav-portfolio"> Portfolio <div class="under-line"></div></div>
+    <div class="under" id="nav-about"> About Me <div class="under-line"></div></div>
     <div id="nav-logo"><img src="logo2.png"></div>
   </div>
 
   <div id="navbar">
-
-    <div id="logo">
-      <%= button_to "", home_path,
-            :class => "home_button", :method => :get %>
-      <img src="logo2.png">
-    </div>
-
   </div>
 
 <%= yield %>
@@ -37,14 +31,119 @@
 
   var $logo = $('#nav-logo');
   var $nav = $('#nav');
+  var $navc = $('#nav-copy');
+  var $under = $('.under');
   var isHovered = $('#graphic').is(":hover");
 
-  $(document).scroll(function() {
-    $logo.css({height: $(this).scrollTop() > 1? "40px":"60px"});
+  $( "#clickme" ).click(function() {
+  $( "#book" ).animate({
+    opacity: 0.25,
+    left: "+=50",
+    height: "toggle"
+  }, 5000, function() {
+    // Animation complete.
   });
+});
+
 
   $(document).scroll(function() {
-    $nav.css({height: $(this).scrollTop() > 1? "80px":"100px"});
+    $logo.animate({height: $(this).scrollTop() > 0? "40px":"60px"}, {duration: 100, queue: false, easing: "linear"});
+    $nav.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $navc.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $under.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $under.animate({top: $(this).scrollTop() > 0? "-20px":"0px"}, {duration: 100, queue: false, easing: "linear"});
+    $navc.animate({opacity: $(this).scrollTop() > 0? "1":"0"}, {duration: 0, queue: false, easing: "linear"});
   });
+
+  // $(document).scroll(function() {
+  //   $nav.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
+  // });
+  //
+  // $(document).scroll(function() {
+  //   $navc.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
+  // });
+  //
+  // $(document).scroll(function() {
+  //   $under.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
+  // });
+  //
+  // $(document).scroll(function() {
+  //   $under.animate({top: $(this).scrollTop() > 0? "-10px":"0spx"}, 400);
+  // });
+  //
+  // $(document).scroll(function() {
+  //   $navc.animate({opacity: $(this).scrollTop() > 0? "1":"0"});
+  // });
+
+
+  $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('#graphic').offset().top - 300) {
+            $("#graphic").css("width","450px");
+            $("#graphic").css("margin-left","680px");
+            $("#graphic-text").css("margin-top","40px");
+            $("#graphic-text").css("margin-left","250px");
+            $("#g-sub-text").css("display","block");
+            $("#g-sub-text").css("margin-left","280px");
+            $("#sushi-wrap").css("margin-left","-40px");
+            $("#chop").css("animation","up3 3s");
+        } else {
+            $("#graphic").css("width","380px");
+            $("#graphic").css("margin-left","750px");
+            $("#graphic-text").css("margin-top","60px");
+            $("#graphic-text").css("margin-left","180px");
+            $("#g-sub-text").css("display","none");
+            $("#g-sub-text").css("margin-left","280px");
+            $("#sushi-wrap").css("margin-left","0px");
+            $("#chop").css("animation","none");
+        }
+    });
+  });
+
+
+  // $(function(){
+  //   $(document).scroll(function(){
+  //       if($(this).scrollTop() >= $('#graphic').offset().top - 300) {
+  //           $("#graphic").css("width","450px");
+  //           $("#graphic").css("margin-left","680px");
+  //           $("#graphic-text").css("margin-top","40px");
+  //           $("#graphic-text").css("margin-left","250px");
+  //           $("#g-sub-text").css("display","block");
+  //           $("#g-sub-text").css("margin-left","280px");
+  //           $("#sushi-wrap").css("margin-left","-40px");
+  //           $("#chop").css("animation","up3 3s");
+  //       } else {
+  //           $("#graphic").css("width","380px");
+  //           $("#graphic").css("margin-left","750px");
+  //           $("#graphic-text").css("margin-top","60px");
+  //           $("#graphic-text").css("margin-left","180px");
+  //           $("#g-sub-text").css("display","none");
+  //           $("#g-sub-text").css("margin-left","280px");
+  //           $("#sushi-wrap").css("margin-left","0px");
+  //           $("#chop").css("animation","none");
+  //       }
+  //   });
+  // });
+
+  // $("#graphic").hover(function(){
+  //     $(this).css("background-color", "yellow");
+  //     $("#graphic").css("width","450px");
+  //     $("#graphic").css("margin-left","680px");
+  //     $("#graphic-text").css("margin-top","40px");
+  //     $("#graphic-text").css("margin-left","250px");
+  //     $("#graphic-sub-text").css("margin-top","40px");
+  //     $("#graphic-sub-text").css("margin-left","250px");
+  //     $("#sushi-wrap").css("margin-left","-40px");
+  //     }, function(){
+  //     $(this).css("background-color", "pink");
+  //     $("#graphic").css("width","380px");
+  //     $("#graphic").css("margin-left","750px");
+  //     $("#graphic-text").css("margin-top","60px");
+  //     $("#graphic-text").css("margin-left","180px");
+  // });
+  //
+  // $('#graphic').hover(
+  //      function(){ $(this).addClass('graphic-hover') },
+  // )
 
 </script>
