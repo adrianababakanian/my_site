@@ -47,36 +47,33 @@
 
 
   $(document).scroll(function() {
-    $logo.animate({"height": $(this).scrollTop() > 0? "40px":"60px"}, 400);
+    $logo.animate({height: $(this).scrollTop() > 0? "40px":"60px"}, {duration: 100, queue: false, easing: "linear"});
+    $nav.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $navc.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $under.animate({height: $(this).scrollTop() > 0? "60px":"100px"}, {duration: 100, queue: false, easing: "linear"});
+    $under.animate({top: $(this).scrollTop() > 0? "-20px":"0spx"}, {duration: 100, queue: false, easing: "linear"});
+    $navc.animate({opacity: $(this).scrollTop() > 0? "1":"0"}, {duration: 0, queue: false, easing: "linear"});
   });
 
-  $(document).scroll(function() {
-    $nav.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
-  });
-
-  $(document).scroll(function() {
-    $navc.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
-  });
-
-  // $(window).scroll(function() {
-  //   if($(this).scrollTop() > 0) {
-  //     $under.animate({line-height: "80px", height: "80px"}, 400);
-  //   } else {
-  //     $under.animate({line-height: "100px", height: "100px"}, 400);
-  //   }
+  // $(document).scroll(function() {
+  //   $nav.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
   // });
-
-  $(document).scroll(function() {
-    $under.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
-  });
-
-  $(document).scroll(function() {
-    $under.animate({top: $(this).scrollTop() > 0? "-10px":"0spx"}, 400);
-  });
-
-  $(document).scroll(function() {
-    $navc.animate({opacity: $(this).scrollTop() > 0? "1":"0"});
-  });
+  //
+  // $(document).scroll(function() {
+  //   $navc.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
+  // });
+  //
+  // $(document).scroll(function() {
+  //   $under.animate({height: $(this).scrollTop() > 0? "80px":"100px"}, 400);
+  // });
+  //
+  // $(document).scroll(function() {
+  //   $under.animate({top: $(this).scrollTop() > 0? "-10px":"0spx"}, 400);
+  // });
+  //
+  // $(document).scroll(function() {
+  //   $navc.animate({opacity: $(this).scrollTop() > 0? "1":"0"});
+  // });
 
 
   $(function(){
