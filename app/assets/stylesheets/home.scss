@@ -7,19 +7,11 @@ body {
   // background: linear-gradient(#ffffff, #EFE7E6);
 }
 
-
 #wrapper {
   width: 900px;
   height: 100px;
   margin: 0 auto;
   margin-top: 50px;
-}
-
-#wrap {
-  width: 1100px;
-  margin: 0 auto;
-  margin-top: 40px;
-  // background-color: blue;
 }
 
 .work-cover {
@@ -467,6 +459,7 @@ h1 {
   margin-top: 260px;
   margin-left: 150px;
   z-index: 50;
+  transition: .5s;
 }
 
 @keyframes up {
@@ -509,7 +502,7 @@ h1 {
   z-index: 100;
   left: 50%;
   margin-left:-170px;
-  margin-top: 400px;
+  margin-top: 450px;
   opacity: 1;
 }
 
