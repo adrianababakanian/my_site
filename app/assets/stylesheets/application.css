@@ -60,6 +60,7 @@ body, html {
 }
 
 .section {
+  display: inline-block;
 }
 
 .liner {
@@ -70,7 +71,6 @@ body, html {
 
 .section-title {
   font-size: 23px;
-  background-color: red;
   margin-bottom: 2px;
   font-family: Puritan;
   font-weight: 800;
