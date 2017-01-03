@@ -51,30 +51,48 @@ body, html {
   height: 30px;
   position: relative;
   top: 10%;
-  left: 5%;
+  left: 10%;
 }
 
 .section-wrap {
-  margin-left: 5%;
+  margin-left: 10%;
   margin-top: 30%;
 }
 
+.section {
+}
+
+.liner {
+  width: 100%;
+  height: 1px;
+  background-color: green;
+}
+
 .section-title {
-  font-size: 30px;
+  font-size: 23px;
+  background-color: red;
+  margin-bottom: 2px;
+  font-family: Puritan;
+  font-weight: 800;
+  display: inline-block;
+  /*width: auto;
+  display: inline;
+  margin-right: 80%;
+  margin-bottom: 20px;*/
 }
 
 .divider {
-  width: 90%;
+  width: 80%;
   height: 5px;
   background-color: #DCEBF7;
-  transform: translateX(5%);
+  transform: translateX(10%);
 }
 
 .contact-wrap {
-  width: 90%;
-  transform: translateX(5%);
+  width: 80%;
+  transform: translateX(10%);
   height: 40px;
-  margin-top: 50px;
+  margin-top: 8%;
 }
 
 .menu-contact-wrapper {
