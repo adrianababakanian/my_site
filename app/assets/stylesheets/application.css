@@ -21,6 +21,23 @@ body, html {
   font-size: 14px;
   font-family: Muli;
   font-weight: 400;
+  margin-left: 0px;
+}
+
+a:link {
+  color: #303030;
+}
+
+a:visited {
+  color: #303030;
+}
+
+a:hover {
+  color: #303030;
+}
+
+a:active {
+  color: #303030;
 }
 
 #wrap {
@@ -36,6 +53,8 @@ body, html {
   opacity: .6;
   position: fixed;
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .menu {
@@ -44,6 +63,28 @@ body, html {
   background-color: white;
   position: fixed;
   z-index: 1000;
+  margin-left: -39vw;
+  transition: .3s;
+}
+
+/*#nav-menu:hover ~ .menu {
+  margin-left: 0vw;
+  transition: .3s;
+}
+
+#nav-menu:hover ~ .hider {
+  display: block;
+}*/
+
+.menu:hover {
+  margin-left: 0vw;
+  transition: .3s;
+}
+
+.menu:hover ~ .hider {
+  visibility: visible;
+  opacity: .6;
+  transition: opacity .3s ease-in-out;
 }
 
 .menu-logo {
@@ -64,9 +105,14 @@ body, html {
 }
 
 .liner {
+  width: 0px;
+  height: 2px;
+  background-color: #303030;
+}
+
+.section:hover .liner {
   width: 100%;
-  height: 1px;
-  background-color: green;
+  transition: .5s;
 }
 
 .section-title {
@@ -75,10 +121,6 @@ body, html {
   font-family: Puritan;
   font-weight: 800;
   display: inline-block;
-  /*width: auto;
-  display: inline;
-  margin-right: 80%;
-  margin-bottom: 20px;*/
 }
 
 .divider {
@@ -86,6 +128,7 @@ body, html {
   height: 5px;
   background-color: #DCEBF7;
   transform: translateX(10%);
+  margin-top: 8%;
 }
 
 .contact-wrap {

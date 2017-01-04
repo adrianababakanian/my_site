@@ -12,13 +12,12 @@
 </head>
 
 <div class="menu">
-  <div class="menu-logo"><img src="logo2.png"></div>
+<div class="menu-logo"><img src="logo2.png"></div>
   <div class="section-wrap">
-    <div class="section"><p class="section-title"> Design </p> <div class="liner"></div></div><br/>
-    <div class="section"><p class="section-title"> Code </p> <div class="liner"></div> </div><br/>
-    <div class="section"><p class="section-title"> Fine Art </p> <div class="liner"></div> </div><br/>
-    <div class="section"><p class="section-title"> Marketing </p> <div class="liner"></div> </div><br/>
-    <div class="section"><p class="section-title"> About </p> <div class="liner"></div> </div><br/>
+    <a href="designs/index"><div class="section"><p class="section-title"> Design </p> <div class="liner"></div></div><br/></a>
+    <a href="webs/index"><div class="section"><p class="section-title"> Code </p> <div class="liner"></div> </div><br/></a>
+    <a href="arts/index"><div class="section"><p class="section-title"> Fine Art </p> <div class="liner"></div> </div><br/></a>
+    <a href="about/index"><div class="section"><p class="section-title"> About </p> <div class="liner"></div> </div><br/></a>
   </div>
   <div class="divider"></div>
   <div class="contact-wrap">
@@ -70,6 +69,7 @@
   </div>
 </div>
 <div class="hider"></div>
+
 
 <body>
   <div id="nav">
@@ -146,6 +146,11 @@
             $("#chop").css("animation","none");
         }
     });
+  });
+
+  //trying to animate menu
+  $("#nav-menu").click(function () {
+    $("#menu").animate({"marginLeft": "-40px"});
   });
 
   //trying to animate chop on hover
