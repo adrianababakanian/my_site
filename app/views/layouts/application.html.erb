@@ -157,6 +157,12 @@
     });
   });
 
+  //making fixed disappear after certain scroll
+  $(document).scroll(function() {
+    var $fix = $('.fix');
+    $fix.animate({opacity: $(this).scrollTop() > 1000? "0":"1"}, {duration: 50, queue: false, easing: "linear"});
+  });
+
   //trying to animate menu
   $("#nav-menu").click(function () {
     $("#menu").animate({"marginLeft": "-40px"});
