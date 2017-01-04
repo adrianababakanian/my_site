@@ -140,10 +140,47 @@
         var $scroll = $(this).scrollTop();
         var $goff = $('#graphic').offset();
         var $hovered = $('#graphic:hover');//$('#graphic').is(':hover');
-        if($scroll >= $goff.top - 300 || $scroll) {
+        if($scroll >= $goff.top - 300) {
             $("#chop").css("animation","up3 3s");
         } else {
             $("#chop").css("animation","none");
+        }
+    });
+  });
+
+  //flaoting containers upwards and inwards on scroll
+  $(function(){
+    $(document).scroll(function(){
+        var $scroll = $(this).scrollTop();
+        var $goff = $('#graphic').offset();
+        var $graphic = $('#graphic');
+        if($scroll >= $goff.top - 300) {
+            $graphic.css("marginLeft","730px");
+            $graphic.css("marginTop", "-30px");
+        } else {
+            $graphic.css("marginLeft","750px");
+            $graphic.css("marginTop", "-10px");
+        }
+    });
+  });
+
+  // $(document).scroll(function() {
+  //   var $dev = $('#dev-wrapper');
+  //   $dev.animate({marginLeft: $dev.offset().top > 0? "120px":"80px"}, {duration: 100, queue: false, easing: "linear"});
+  //   $dev.animate({marginTop: $dev.offset().top > 0? "-190px":"-150px"}, {duration: 100, queue: false, easing: "linear"});
+  // });
+  //
+  $(function(){
+    $(document).scroll(function(){
+        var $scroll = $(this).scrollTop();
+        var $doff = $('#dev-wrapper').offset();
+        var $dev = $('#dev-wrapper');
+        if($scroll >= $doff.top - 300) {
+            $dev.css("marginLeft","100px");
+            $dev.css("marginTop", "-170px");
+        } else {
+            $dev.css("marginLeft","80px");
+            $dev.css("marginTop", "-150px");
         }
     });
   });
