@@ -234,6 +234,10 @@ h1 {
   animation: float 8s infinite;
 }
 
+#graphic-wrapper {
+  background-color: blue;
+}
+
 #graphic {
   margin-left: 750px;
   margin-top: -10px;
@@ -242,6 +246,7 @@ h1 {
   background-color: #FFEECB;
   position: relative;
   transition: .5s;
+  display: inline-block;
 }
 
 #g-back {
@@ -327,8 +332,8 @@ h1 {
 }
 
 #graphic:hover {
-  width: 450px;
-  margin-left: 680px;
+  width: 450px !important;
+  margin-left: 680px !important;
 }
 
 .graphic-hover {
@@ -348,8 +353,9 @@ h1 {
   width: 560px;
   height: 600px;
   position: relative;
-  margin-left: 80px;
-  margin-top: -150px;
+  margin-left: 60px;
+  margin-top: -130px;
+  transition: .3s;
 }
 
 #dev-img {
@@ -398,12 +404,13 @@ h1 {
 }
 
 #fine-wrapper {
-  width: 500pxg;
+  width: 500px;
   height: 400px;
   margin-left: 550px;
   margin-top: -200px;
   margin-bottom: 200px;
   position: relative;
+  transition: .3s;
 }
 
 #fine-img {
