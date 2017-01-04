@@ -10,11 +10,71 @@
   <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Puritan">
 </head>
-<body>
 
+<div class="menu">
+<div class="menu-logo"><img src="logo2.png"></div>
+  <div class="section-wrap">
+    <a href="designs/index"><div class="section"><p class="section-title"> Design </p> <div class="liner"></div></div><br/></a>
+    <a href="webs/index"><div class="section"><p class="section-title"> Code </p> <div class="liner"></div> </div><br/></a>
+    <a href="arts/index"><div class="section"><p class="section-title"> Fine Art </p> <div class="liner"></div> </div><br/></a>
+    <a href="about/index"><div class="section"><p class="section-title"> About </p> <div class="liner"></div> </div><br/></a>
+  </div>
+  <div class="divider"></div>
+  <div class="contact-wrap">
+      <div class="menu-contact-wrapper">
+        <a href="https://www.behance.net/adrianababakanian" target="_blank">
+          <div class="menu-contact">
+            <div class="menu-hide"><img style="z-index:100" src="be3flip.png"></div>
+            <div class="menu-flip"><img style="z-index:200" src="be2.png"></div>
+            <div class="menu-circle"></div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-contact-wrapper">
+        <a href="https://www.pinterest.com/ababakanian/" target="_blank">
+          <div class="menu-contact">
+            <div class="menu-hide"><img style="z-index:100" src="pin3flip.png"></div>
+            <div class="menu-flip"><img style="z-index:200" src="pin2.png"></div>
+            <div class="menu-circle"></div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-contact-wrapper">
+        <a href="https://github.com/adrianababakanian" target="_blank">
+          <div class="menu-contact">
+            <div class="menu-hide"><img style="z-index:100"src="git3flip.png"></div>
+            <div class="menu-flip"><img style="z-index:200" src="git2.png"></div>
+            <div class="menu-circle"></div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-contact-wrapper">
+        <a href="https://www.linkedin.com/in/adriana-babakanian-60b597112" target="_blank">
+          <div class="menu-contact">
+            <div class="menu-hide"><img style="z-index:100" src="in3flip.png"></div>
+            <div class="menu-flip"><img style="z-index:200" src="in2.png"></div>
+            <div class="menu-circle"></div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-contact-wrapper" id="last">
+        <a href="mailto:ababakanian@berkeley.edu" target="_blank">
+          <div class="menu-contact">
+            <div class="menu-hide"><img style="z-index:100" src="mail3flip.png"></div>
+            <div class="menu-flip"><img style="z-index:200" src="mail2.png"></div>
+            <div class="menu-circle"></div>
+          </div>
+        </a>
+      </div>
+  </div>
+</div>
+<div class="hider"></div>
+
+
+<body>
   <div id="nav">
     <div id="nav-copy"></div>
-    <div class="under" id="nav-portfolio"> Menu <div class="under-line"></div></div>
+    <div class="under" id="nav-menu"> Menu <div class="under-line"></div></div>
     <div class="under" id="nav-about"> About <div class="under-line"></div></div>
     <a href="home/index" id="nav-logo">
         <img src="logo2.png">
@@ -86,6 +146,11 @@
             $("#chop").css("animation","none");
         }
     });
+  });
+
+  //trying to animate menu
+  $("#nav-menu").click(function () {
+    $("#menu").animate({"marginLeft": "-40px"});
   });
 
   //trying to animate chop on hover
