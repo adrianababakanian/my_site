@@ -135,18 +135,19 @@
   //   });
   // });
 
-  $(function(){
-    $(document).scroll(function(){
-        var $scroll = $(this).scrollTop();
-        var $goff = $('#graphic').offset();
-        var $hovered = $('#graphic:hover');//$('#graphic').is(':hover');
-        if($scroll >= $goff.top - 300 || $scroll) {
-            $("#chop").css("animation","up3 3s");
-        } else {
-            $("#chop").css("animation","none");
-        }
-    });
-  });
+  //animating chop on hover
+  // $(function(){
+  //   $(document).scroll(function(){
+  //       var $scroll = $(this).scrollTop();
+  //       var $goff = $('#graphic').offset();
+  //       var $hovered = $('#graphic:hover');//$('#graphic').is(':hover');
+  //       if($scroll >= $goff.top - 300 || $scroll) {
+  //           $("#chop").css("animation","up3 3s");
+  //       } else {
+  //           $("#chop").css("animation","none");
+  //       }
+  //   });
+  // });
 
   //trying to animate menu
   $("#nav-menu").click(function () {
@@ -154,13 +155,13 @@
   });
 
   //trying to animate chop on hover
-  $("#chop").hover(function() {
-    $('#chop').hover(function(){ //Open on hover
-        $(this).css("animation", "up3 3s" );
-    },
-    function(){ //Close when not hovered
-        $(this).css("animation", "none" );
-    });
-  });
+  // $("#chop").hover(function() {
+  //   $('#chop').hover(function(){ //Open on hover
+  //       $(this).css("animation", "up3 3s" );
+  //   },
+  //   function(){ //Close when not hovered
+  //       $(this).css("animation", "none" );
+  //   });
+  // });
 
 </script>

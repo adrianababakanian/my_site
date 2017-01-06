@@ -301,7 +301,7 @@ h1 {
 }
 
 #graphic:hover #chop {
-  animation: up3 3s;
+  animation: up3 2s;
 }
 
 #graphic:hover #sushi-wrap {
@@ -481,8 +481,8 @@ h1 {
 
 @keyframes up3 {
   0%   {top: 0px;}
-  45%   {top: -180px;}
-  55% {top: -180px;}
+  45%   {top: -100px;}
+  55% {top: -100px;}
   100% {top: 0px;}
   100% {transform: rotate(340deg);}
 }
