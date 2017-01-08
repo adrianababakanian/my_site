@@ -58,12 +58,12 @@ a:active {
 }
 
 .menu {
-  width: 40vw;
+  width: 30vw;
   height: 100vh;
   background-color: white;
   position: fixed;
   z-index: 1000;
-  margin-left: -39vw;
+  margin-left: -29vw;
   transition: .3s;
 }
 
@@ -106,9 +106,11 @@ a:active {
 
 .liner {
   width: 0px;
-  height: 2px;
+  height: 1px;
   background-color: #303030;
   transition: .3s;
+  margin-top: -15px;
+  margin-bottom: 15px;
 }
 
 .section:hover .liner {
