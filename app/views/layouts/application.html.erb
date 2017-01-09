@@ -71,18 +71,10 @@
 <div class="hider"></div>
 
 
-<body>
-  <div id="nav">
-    <div id="nav-copy"></div>
-    <div class="under" id="nav-menu"> Menu <div class="under-line"></div></div>
-    <div class="under" id="nav-about"> About <div class="under-line"></div></div>
-    <a href="home/index" id="nav-logo">
-        <img src="logo2.png">
-    </a>
-  </div>
 
-  <div id="navbar">
-  </div>
+
+<body>
+
 
 <%= yield %>
 
@@ -92,9 +84,9 @@
 <script>
 
   //jQuery variable definition
-  var $logo = $('#nav-logo');
-  var $nav = $('#nav');
-  var $navc = $('#nav-copy');
+  var $logo = $('.nav-logo');
+  var $nav = $('.nav');
+  var $navc = $('.nav-copy');
   var $under = $('.under');
   var $line = $('.under-line');
   var isHovered = $('#graphic').is(":hover");
