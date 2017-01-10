@@ -510,6 +510,7 @@ h1 {
   margin-left:-170px;
   margin-top: 450px;
   opacity: 1;
+  display: none;
 }
 
 #fixed {
@@ -694,7 +695,7 @@ h1 {
 .sectionpop {
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  background-color: white;
   position: fixed;
   z-index: 2000;
   overflow-y: auto;
@@ -716,9 +717,39 @@ h1 {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: blue;
+  background-color: #DCEBF7;
   position: fixed;
   z-index: 1000000;
   right: 3vw;
-  top: -50px;
+  top: -60px;
+  box-shadow: 0px 0px 8px #BEBEC6;
+}
+
+.x {
+  height: 50%;
+}
+
+@keyframes spinner {
+  100% {transform: rotate(360deg);}
+}
+
+.closer:hover {
+  animation: spinner 1s;
+}
+
+.workswrap {
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 100px;
+  background-color: blue;
+}
+
+.work {
+  width: 43vw;
+  height: 350px;
+  background-color: red;
+  margin-right: 4vw;
+  margin-bottom: 4vw;
+  float: left;
+  position: relative;
 }

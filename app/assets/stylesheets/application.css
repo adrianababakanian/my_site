@@ -58,7 +58,7 @@ a:active {
   width: 100vw;
   height: 100vh;
   background-color: #101010;
-  opacity: .6;
+  opacity: 0;
   position: fixed;
   z-index: 999;
   visibility: hidden;
@@ -68,7 +68,6 @@ a:active {
 
 .showhider {
   visibility: visible;
-  opacity: .6;
 }
 
 .menu {
@@ -121,7 +120,7 @@ a:active {
 }
 
 .divider {
-  width: 80%;
+  width: 0px;
   height: 5px;
   background-color: #DCEBF7;
   transform: translateX(10%);

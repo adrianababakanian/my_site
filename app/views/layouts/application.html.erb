@@ -157,10 +157,12 @@
 
   //menu on toggle
   $('#nav-menu').click(function() {
-    $('.menu').animate({marginLeft: "0vw"}, {duration: 100, queue: false, easing: "linear"});
+    $('.menu').animate({marginLeft: "0vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "80%"}, {duration: 600, queue: false, easing: "linear"});
     $('.hider').addClass('showhider');
-    $('.hider').animate({marginLeft: "0vw"}, {duration: 100, queue: false, easing: "linear"});
-    $('.wrapper').animate({marginLeft: "30vw"}, {duration: 100, queue: false, easing: "linear"});
+    $('.hider').animate({marginLeft: "0vw"}, {duration: 00, queue: false, easing: "linear"});
+    $('.hider').animate({opacity: ".4"}, {duration: 500, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "30vw"}, {duration: 400, queue: false, easing: "linear"});
   });
   //menu off toggle
   $(document).mouseup(function (e)
@@ -170,10 +172,11 @@
     if (!container.is(e.target) // if the target of the click isn't the container...
         && container.has(e.target).length === 0) // ... nor a descendant of the container
     {
-        container.animate({marginLeft: "-30vw"}, {duration: 100, queue: false, easing: "linear"});
+        container.animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+        $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
         $('.hider').removeClass('showhider');
-        $('.hider').animate({marginLeft: "-100vw"}, {duration: 100, queue: false, easing: "linear"});
-        $('.wrapper').animate({marginLeft: "0px"}, {duration: 100, queue: false, easing: "linear"});
+        $('.hider').animate({marginLeft: "-100vw"}, {duration: 00, queue: false, easing: "linear"});
+        $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
     }
   });
 

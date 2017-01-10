@@ -6,18 +6,23 @@
 
 <body>
 
-  <div class="closer clickable"></div>
+  <div class="closer clickable"><img src="xwhite.png" class="x xwhite"></div>
 
   <div class="sectionpop">
-    <div class="filler"></div>
-    <div class="filler"></div>
-    <div class="filler"></div>
-    <div class="filler"></div>
-    <div class="filler"></div>
-    <div class="filler"></div>
-    <div class="filler"></div>
-    <div class="filler"></div>
-    <div class="filler"></div>
+    <div class="workswrap">
+      <div class="work">
+        <img src="cam.png">
+      </div>
+      <div class="work" id="last">
+        <img src="dragon.png">
+      </div>
+      <div class="work">
+        <img src="cam.png">
+      </div>
+      <div class="work" id="last">
+        <img src="dragon.png">
+      </div>
+    </div>
   </div>
 
   <div class="wrapper">
@@ -157,13 +162,13 @@ it could be attributed to this?? -->
 
   $('#graphic').click(function() {
     $('.sectionpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
-    $('.closer').animate({top: "3vh"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.closer').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
   });
 
   $('.closer').click(function() {
+    $('.closer').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
     $('.sectionpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
-    $('.closer').animate({top: "-50px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
   });
 
