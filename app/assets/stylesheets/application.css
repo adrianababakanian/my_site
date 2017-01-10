@@ -61,8 +61,8 @@ a:active {
   opacity: .6;
   position: fixed;
   z-index: 999;
-  opacity: 0;
   visibility: hidden;
+  margin-left: -100vw;
 }
 
 .showhider {
@@ -79,16 +79,6 @@ a:active {
   margin-left: -30vw;
   transition: .3s;
 }
-
-/*.menu:hover {
-  margin-left: 0vw;
-  transition: .3s;
-}
-
-.menu:hover ~ .hider {
-  opacity: .6;
-  transition: opacity .3s ease-in-out;
-}*/
 
 .menu-logo {
   width: 30px;

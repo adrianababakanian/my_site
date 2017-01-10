@@ -159,10 +159,9 @@
 
   $('#nav-menu').click(function() {
     $('.menu').animate({marginLeft: "0vw"}, {duration: 100, queue: false, easing: "linear"});
-  });
-
-  $('#nav-menu').click(function() {
     $('.hider').addClass('showhider');
+    $('.hider').animate({marginLeft: "0vw"}, {duration: 100, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "30vw"}, {duration: 100, queue: false, easing: "linear"});
   });
 
   $(document).mouseup(function (e)
@@ -174,6 +173,8 @@
     {
         container.animate({marginLeft: "-30vw"}, {duration: 100, queue: false, easing: "linear"});
         $('.hider').removeClass('showhider');
+        $('.hider').animate({marginLeft: "-100vw"}, {duration: 100, queue: false, easing: "linear"});
+        $('.wrapper').animate({marginLeft: "0px"}, {duration: 100, queue: false, easing: "linear"});
     }
   });
 
