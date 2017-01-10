@@ -92,6 +92,8 @@
     </div>
   </div>
 
+  <div class="workpop"><div class="goback"></div></div>
+
   <div class="wrapper">
 
   <div class="nav">
@@ -273,6 +275,16 @@ it could be attributed to this?? -->
     $('#aboutcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
     $('#aboutpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  });
+
+  //on and off toggle of work section
+  $('.work').click(function() {
+    $('.workpop').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphicpop').animate({top: "100vh"}, {duration: 400, queue: false, easing: "linear"});
+  });
+  $('.goback').click(function() {
+    $('.workpop').animate({top: "100vh"}, {duration: 400, queue: false, easing: "linear"});
+    $('#designpop').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
   });
 
 </script>
