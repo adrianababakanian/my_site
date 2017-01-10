@@ -71,15 +71,6 @@ a:active {
   transition: .3s;
 }
 
-/*#nav-menu:hover ~ .menu {
-  margin-left: 0vw;
-  transition: .3s;
-}
-
-#nav-menu:hover ~ .hider {
-  display: block;
-}*/
-
 .menu:hover {
   margin-left: 0vw;
   transition: .3s;
@@ -165,7 +156,7 @@ a:active {
   z-index: 50;
   position: absolute;
   float: left;
-  background-color: white;//#303030;
+  background-color: white;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -181,9 +172,8 @@ a:active {
 .menu-circle {
   width: 0px;
   height: 0px;
-  background-color: #303030;//white;
+  background-color: #303030;
   border-radius: 100%;
-  // border: 2px #303030 solid;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -215,7 +205,7 @@ a:active {
 }
 
 .menu-contact:hover .menu-hide {
-  display: none
+  display: none;
 }
 
 .nav {
