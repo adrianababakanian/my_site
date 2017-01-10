@@ -1,9 +1,25 @@
 <head>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
   <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
+
+  <div class="closer clickable"></div>
+
+  <div class="sectionpop">
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+    <div class="filler"></div>
+  </div>
+
   <div class="nav">
     <div class="nav-copy"></div>
     <div class="under" id="nav-menu"> Menu <div class="under-line"></div></div>
@@ -12,9 +28,9 @@
         <img src="logo2.png">
     </a>
   </div>
-
   <div class="navbar">
   </div>
+
   <div class="fix">
     <div class="h-wrap" id="fixed">
       <div class="h-box h-text" id="fixed-h"> <b>all design</b> </div>
@@ -25,6 +41,7 @@
       <div class="h-box h-back" id="fixed-h"></div>
     </div>
   </div>
+
   <div id="wrap">
       <div id="hello">
         <div class="color-box"></div>
@@ -41,10 +58,8 @@
         </div>
       </div>
 
-    <div id="zag"> <img src="zag.png"> </div>
 
-    <a href="../designs/index">
-      <div id="graphic">
+      <div class="clickable" id="graphic">
         <div class="pop" id="one"><img src="sushi.png"></div>
         <div id="graphic-text">design</div>
         <div id="chop"><img src="chop.png"></div>
@@ -53,7 +68,7 @@
           <img src="dragon.png">
         </div>
       </div>
-    </a>
+
 
     <div id="dev-wrapper">
       <div id="dev-img"><img src="webdev.png"></div>
@@ -149,6 +164,10 @@ it could be attributed to this?? -->
             $($fix).css("opacity","1");
         }
     });
+  });
+
+  $('#graphic').click(function() {
+    $('.sectionpop').animate({left: "0px"}, {duration: 200, queue: false, easing: "linear"});
   });
 
 </script>

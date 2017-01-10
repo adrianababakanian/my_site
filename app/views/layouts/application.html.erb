@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AdrianaBabakanian</title>
+  <title>Adriana Babakanian</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -155,9 +155,27 @@
     $fix.animate({opacity: $(this).scrollTop() > 1000? "0":"1"}, {duration: 50, queue: false, easing: "linear"});
   });
 
-  //trying to animate menu
-  $("#nav-menu").click(function () {
-    $("#menu").animate({"marginLeft": "-40px"});
+
+
+  $('#nav-menu').click(function() {
+    $('.menu').animate({marginLeft: "0vw"}, {duration: 100, queue: false, easing: "linear"});
   });
+
+  $('#nav-menu').click(function() {
+    $('.hider').addClass('showhider');
+  });
+
+  $(document).mouseup(function (e)
+    {
+    var container = $(".menu");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.animate({marginLeft: "-30vw"}, {duration: 100, queue: false, easing: "linear"});
+        $('.hider').removeClass('showhider');
+    }
+  });
+
 
 </script>
