@@ -155,15 +155,14 @@
     $fix.animate({opacity: $(this).scrollTop() > 1000? "0":"1"}, {duration: 50, queue: false, easing: "linear"});
   });
 
-
-
+  //menu on toggle
   $('#nav-menu').click(function() {
     $('.menu').animate({marginLeft: "0vw"}, {duration: 100, queue: false, easing: "linear"});
     $('.hider').addClass('showhider');
     $('.hider').animate({marginLeft: "0vw"}, {duration: 100, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "30vw"}, {duration: 100, queue: false, easing: "linear"});
   });
-
+  //menu off toggle
   $(document).mouseup(function (e)
     {
     var container = $(".menu");

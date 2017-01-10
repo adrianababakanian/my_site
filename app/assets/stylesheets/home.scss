@@ -698,7 +698,7 @@ h1 {
   position: fixed;
   z-index: 2000;
   overflow-y: auto;
-  left: 99vw;
+  left: 100vw;
 }
 
 .filler {
@@ -720,5 +720,5 @@ h1 {
   position: fixed;
   z-index: 1000000;
   right: 3vw;
-  top: 3vh;
+  top: -50px;
 }

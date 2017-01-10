@@ -155,21 +155,16 @@ it could be attributed to this?? -->
 
 <script>
 
-  var $fix = $('.fix');
-  var $foot = $('#footer');
-
-  $(function(){
-    $($fix).scroll(function(){
-        if($(this).scrollTop() >= $($foot).offset().top) {
-            $($fix).css("opacity","0");
-        } else {
-            $($fix).css("opacity","1");
-        }
-    });
+  $('#graphic').click(function() {
+    $('.sectionpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.closer').animate({top: "3vh"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
   });
 
-  $('#graphic').click(function() {
-    $('.sectionpop').animate({left: "0px"}, {duration: 200, queue: false, easing: "linear"});
+  $('.closer').click(function() {
+    $('.sectionpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.closer').animate({top: "-50px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
   });
 
 </script>

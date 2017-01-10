@@ -63,6 +63,7 @@ a:active {
   z-index: 999;
   visibility: hidden;
   margin-left: -100vw;
+  cursor: pointer;
 }
 
 .showhider {
