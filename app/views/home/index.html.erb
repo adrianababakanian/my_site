@@ -6,22 +6,89 @@
 
 <body>
 
-  <div class="closer clickable"><img src="xwhite.png" class="x xwhite"></div>
+  <div class="closer clickable" id="graphiccloser"><img src="xwhite.png" class="x xwhite"></div>
+  <div class="closer clickable" id="codecloser"><img src="xwhite.png" class="x xwhite"></div>
+  <div class="closer clickable" id="artcloser"><img src="xwhite.png" class="x xwhite"></div>
+  <div class="closer clickable" id="aboutcloser"><img src="xwhite.png" class="x xwhite"></div>
 
-  <div class="sectionpop">
+  <div class="sectionpop" id="graphicpop">
+    <div class="workstitle">
+      <h1> Design </h1>
+      <p> Click to explore my projects, sketches, and doodles. </p>
+    </div>
     <div class="workswrap">
       <div class="work">
-        <img src="cam.png">
+        <div class="workcover">Feaster | Visual, Marketing, & UI Design</div>
+        <img src="marketing.png">
       </div>
       <div class="work" id="last">
+        <div class="workcover">hello</div>
         <img src="dragon.png">
       </div>
       <div class="work">
-        <img src="cam.png">
+        <div class="workcover">hello</div>
+        <img src="buildings.png" class="hor">
       </div>
       <div class="work" id="last">
+        <div class="workcover">hello</div>
         <img src="dragon.png">
       </div>
+    </div>
+  </div>
+
+  <div class="sectionpop" id="codepop">
+    <div class="workstitle">
+      <h1> Code </h1>
+      <p> Click to explore some of my sites and webapps. </p>
+    </div>
+    <div class="workswrap">
+      <div class="work">
+        <div class="workcover">FEASTER | VISUAL, MARKETING, & UI DESIGN</div>
+        <img src="marketing.png">
+      </div>
+      <div class="work" id="last">
+        <div class="workcover">hello</div>
+        <img src="dragon.png">
+      </div>
+      <div class="work">
+        <div class="workcover">hello</div>
+        <img src="buildings.png" class="hor">
+      </div>
+      <div class="work" id="last">
+        <div class="workcover">hello</div>
+        <img src="dragon.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="sectionpop" id="artpop">
+    <div class="workstitle">
+      <h1> Fine Art </h1>
+      <p> Click to explore some of my paintings, compositions, and other fine art works. </p>
+    </div>
+    <div class="workswrap">
+      <div class="work">
+        <div class="workcover">FEASTER | VISUAL, MARKETING, & UI DESIGN</div>
+        <img src="marketing.png">
+      </div>
+      <div class="work" id="last">
+        <div class="workcover">hello</div>
+        <img src="dragon.png">
+      </div>
+      <div class="work">
+        <div class="workcover">hello</div>
+        <img src="buildings.png" class="hor">
+      </div>
+      <div class="work" id="last">
+        <div class="workcover">hello</div>
+        <img src="dragon.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="sectionpop" id="aboutpop">
+    <div class="workstitle">
+      <h1> About </h1>
     </div>
   </div>
 
@@ -29,8 +96,8 @@
 
   <div class="nav">
     <div class="nav-copy"></div>
-    <div class="under" id="nav-menu"> Menu <div class="under-line"></div></div>
-    <a href="../about/index"><div class="under" id="nav-about"> About <div class="under-line"></div></div></a>
+    <div class="under clickable" id="nav-menu"> Menu <div class="under-line"></div></div>
+    <div class="under clickable" id="nav-about"> About <div class="under-line"></div></div>
     <a href="home/index" class="nav-logo nav-logo-center">
         <img src="logo2.png">
     </a>
@@ -58,7 +125,7 @@
             developer studying Math & Computer Science at the University of
             California, Berkeley. If you like elephants, enamel pins, shrimp
             tempura, or string lights, consider me your new best friend. </p>
-          <div class="h-wrap">
+          <div class="h-wrap clickable" id="aboutme">
             <div class="h-box h-text"> <b>about me</b> </div>
             <div class="h-box h-back"></div>
           </div>
@@ -77,7 +144,7 @@
       </div>
 
 
-    <div id="dev-wrapper">
+    <div class="clickable" id="dev-wrapper">
       <div id="dev-img"><img src="webdev.png"></div>
       <div id="code"><img src="code.png"></div>
       <div id="dev-text">
@@ -87,7 +154,7 @@
       </div>
     </div>
 
-    <div id="fine-wrapper">
+    <div class="clickable" id="fine-wrapper">
       <div id="fine-img-wrap">
         <div id="fine-img"><img src="arts.png"></div>
       </div>
@@ -160,15 +227,51 @@ it could be attributed to this?? -->
 
 <script>
 
-  $('#graphic').click(function() {
-    $('.sectionpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  //on and off toggle of design section
+  $('#graphic, #graphicmenu').click(function() {
+    $('#graphicpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
-    $('.closer').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+  $('#graphiccloser').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#graphicpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
   });
 
-  $('.closer').click(function() {
-    $('.closer').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
-    $('.sectionpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+  //on and off toggle of code section
+  $('#dev-wrapper, #codemenu').click(function() {
+    $('#codepop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+  $('#codecloser').click(function() {
+    $('#codecloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#codepop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  });
+
+  //on and off toggle of art section
+  $('#fine-wrapper, #artmenu').click(function() {
+    $('#artpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+  $('#artcloser').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#artpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
+  });
+
+  //on and off toggle of about section
+  $('#nav-about, #aboutme, #aboutmenu').click(function() {
+    $('#aboutpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
+    $('#aboutcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+  $('#aboutcloser').click(function() {
+    $('#aboutcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#aboutpop').animate({left: "100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
   });
 
