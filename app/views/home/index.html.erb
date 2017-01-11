@@ -12,26 +12,28 @@
   <div class="closer clickable" id="aboutcloser"><img src="xwhite.png" class="x xwhite"></div>
 
   <div class="sectionpop" id="graphicpop">
-    <div class="workstitle">
-      <h1> Design </h1>
-      <p> Click to explore my projects, sketches, and doodles. </p>
-    </div>
-    <div class="workswrap">
-      <div class="work">
-        <div class="workcover">Feaster | Visual, Marketing, & UI Design</div>
-        <img src="marketing.png">
+    <div class="sectionwrap">
+      <div class="workstitle">
+        <h1> Design </h1>
+        <p> Click to explore my projects, sketches, and doodles. </p>
       </div>
-      <div class="work" id="last">
-        <div class="workcover">hello</div>
-        <img src="dragon.png">
-      </div>
-      <div class="work">
-        <div class="workcover">hello</div>
-        <img src="buildings.png" class="hor">
-      </div>
-      <div class="work" id="last">
-        <div class="workcover">hello</div>
-        <img src="dragon.png">
+      <div class="workswrap">
+        <div class="work" id="feasterwork">
+          <div class="workcover">Feaster | Visual, Marketing, & UI Design</div>
+          <img src="marketing.png">
+        </div>
+        <div class="work" id="last">
+          <div class="workcover">Map of Berkeley | Graphic Design</div>
+          <img src="buildings.png" class="hor">
+        </div>
+        <div class="work">
+          <div class="workcover">hello</div>
+          <img src="dragon.png">
+        </div>
+        <div class="work" id="last">
+          <div class="workcover">hello</div>
+          <img src="dragon.png">
+        </div>
       </div>
     </div>
   </div>
@@ -64,20 +66,20 @@
   <div class="sectionpop" id="artpop">
     <div class="workstitle">
       <h1> Fine Art </h1>
-      <p> Click to explore some of my paintings, compositions, and other fine art works. </p>
+      <p> Click to explore some of my paintings, mixed media compositions, and other fine art works. </p>
     </div>
     <div class="workswrap">
       <div class="work">
-        <div class="workcover">FEASTER | VISUAL, MARKETING, & UI DESIGN</div>
-        <img src="marketing.png">
+        <div class="workcover">Alice In Wonderland</div>
+        <img src="arts.png" class="hor">
       </div>
       <div class="work" id="last">
         <div class="workcover">hello</div>
-        <img src="dragon.png">
+        <img src="wood.png" class="hor">
       </div>
       <div class="work">
         <div class="workcover">hello</div>
-        <img src="buildings.png" class="hor">
+        <img src="robot.png" class="hor">
       </div>
       <div class="work" id="last">
         <div class="workcover">hello</div>
@@ -92,7 +94,12 @@
     </div>
   </div>
 
-  <div class="workpop"><div class="goback"></div></div>
+  <div class="workpop" id="feasterpop">
+    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="workcontent"><h1> Feaster </h1></div>
+
+  </div>
 
   <div class="wrapper">
 
@@ -234,6 +241,8 @@ it could be attributed to this?? -->
     $('#graphicpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#graphiccloser').click(function() {
     $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
@@ -246,6 +255,8 @@ it could be attributed to this?? -->
     $('#codepop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#codecloser').click(function() {
     $('#codecloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
@@ -258,6 +269,8 @@ it could be attributed to this?? -->
     $('#artpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#artcloser').click(function() {
     $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
@@ -270,6 +283,8 @@ it could be attributed to this?? -->
     $('#aboutpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#aboutcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#aboutcloser').click(function() {
     $('#aboutcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
@@ -278,13 +293,15 @@ it could be attributed to this?? -->
   });
 
   //on and off toggle of work section
-  $('.work').click(function() {
-    $('.workpop').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
-    $('#graphicpop').animate({top: "100vh"}, {duration: 400, queue: false, easing: "linear"});
+  $('#feasterwork').click(function() {
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#feasterpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
   $('.goback').click(function() {
-    $('.workpop').animate({top: "100vh"}, {duration: 400, queue: false, easing: "linear"});
-    $('#designpop').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#feasterpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
   });
 
 </script>

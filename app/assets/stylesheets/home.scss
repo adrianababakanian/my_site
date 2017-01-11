@@ -703,11 +703,9 @@ h1 {
   top: 0px;
 }
 
-.filler {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  background-color: blue;
+.sectionwrap {
+  top: 0px;
+  height: auto;
 }
 
 .clickable {
@@ -747,6 +745,7 @@ h1 {
   width: 80vw;
   margin-left: 10vw;
   margin-top: 4vw;
+  height: auto;
 }
 
 .work {
@@ -764,7 +763,7 @@ h1 {
 .workcover {
   width: 100%;
   height: 100%;
-  line-height: 30vw;
+  line-height: 27vw;
   background-color: #101010;
   color: white;
   opacity: .4;
@@ -782,15 +781,53 @@ h1 {
 .workpop {
   width: 100vw;
   height: 100vh;
-  background-color: blue;
+  background-color: white;
   position: fixed;
   z-index: 2000;
   overflow-y: auto;
   top: 100vh;
 }
 
+.workcontent {
+  width: 80vw;
+  height: 300px;
+  background-color: blue;
+}
+
 .goback {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #DCEBF7;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 16px;
+  z-index: 1000;
+}
+
+.up {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.introimage-wrapper {
+  width: 100%;
+  height: 35vw;
+}
+
+.introimage {
+  width: 80vw;
+  height: 35vw;
+  position: absolute;
+  margin-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 8px #BEBEC6;
 }
