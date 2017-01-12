@@ -95,7 +95,7 @@ img {
   margin-left: -140px;
   color: #454545;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .big_button:focus {
@@ -808,6 +808,10 @@ h1 {
   z-index: 1000;
 }
 
+.goback:hover {
+  color: #939393;
+}
+
 .up {
   width: 50px;
   height: 50px;
@@ -830,4 +834,40 @@ h1 {
   // left: 50%;
   // transform: translateX(-50%);
   box-shadow: 0px 0px 8px #BEBEC6;
+}
+
+.about-wrapper {
+  width: 80vw;
+  height: 35vw;
+  margin-left: 10vw;
+  margin-top: 5vw;
+}
+
+.aboutdiv {
+  float: left;
+}
+
+.aboutphoto {
+  width: 35vw;
+  height: 45vw;
+  background-color: #E56967;
+}
+
+.aboutcontent {
+  margin-left: 5vw;
+  width: 40vw;
+  height: 45vw;
+}
+
+.divide {
+  height: 5px;
+  background-color: #E56967;
+  width: 100px;
+}
+
+.cursive {
+  color: #E56967;
+  font-family: Muli;
+  font-size: 18px;
+  font-style: italic;
 }
