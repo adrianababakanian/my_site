@@ -850,7 +850,7 @@ h1 {
 .aboutphoto {
   width: 35vw;
   height: 45vw;
-  background-color: #E56967;
+  background-color: #f85563;;
 }
 
 .aboutcontent {
@@ -861,13 +861,19 @@ h1 {
 
 .divide {
   height: 5px;
-  background-color: #E56967;
+  background-color: #f85563;;
   width: 100px;
 }
 
 .cursive {
-  color: #E56967;
+  color: #f85563;
   font-family: PT Serif;
   font-size: 18px;
   font-style: italic;
+  margin-top: 80px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
