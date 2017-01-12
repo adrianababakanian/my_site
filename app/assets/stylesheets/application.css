@@ -20,11 +20,14 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
 
 p {
   font-size: 14px;
+  line-height: 20px;
 }
 
 body, html {
   margin: 0 !important;
   padding: 0 !important;
+  /*max-width: 100%;
+  overflow-x: hidden;*/
   color: #303030;
   font-size: 14px;
   font-family: Muli;
