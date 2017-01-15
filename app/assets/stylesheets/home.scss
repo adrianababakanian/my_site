@@ -859,6 +859,27 @@ h1 {
   min-width: 320px;
 }
 
+.about-wrapper a:link {
+  color: #f85563;
+  text-decoration: none;
+}
+
+.about-wrapper a:visited {
+  color: #f85563;
+  text-decoration: none;
+}
+
+.about-wrapper a:hover {
+  color: #f85563;
+  text-decoration: none;
+  opacity: .7;
+}
+
+.about-wrapper a:active {
+  color: #f85563;
+  text-decoration: none;
+}
+
 .aboutdiv {
   float: left;
 }
