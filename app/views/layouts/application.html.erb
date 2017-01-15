@@ -92,6 +92,7 @@
   var $under = $('.under');
   var $line = $('.under-line');
   var isHovered = $('#graphic').is(":hover");
+  var $width = $('.menu').width();
 
   //animating the navigation bar when scrolling off the top of the document
   $(document).scroll(function() {
@@ -174,13 +175,16 @@
     if (!container.is(e.target) // if the target of the click isn't the container...
         && container.has(e.target).length === 0) // ... nor a descendant of the container
     {
-        container.animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+        container.animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
         $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
         $('.hider').removeClass('showhider');
         $('.hider').animate({marginLeft: "-100vw"}, {duration: 00, queue: false, easing: "linear"});
         $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
     }
   });
+
+  //setting margin-left of menu based on width of menu div
+   $('.menu').css('margin-left',-$width);
 
 
 </script>

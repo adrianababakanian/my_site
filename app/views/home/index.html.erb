@@ -360,12 +360,15 @@ it could be attributed to this?? -->
 
 <script>
 
+  //jQuery variable definition
+  var $width = $('.menu').width();
+
   //on and off toggle of design section
   $('#graphic, #graphicmenu').click(function() {
     $('#graphicpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
-    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
     $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#graphiccloser').click(function() {
@@ -379,7 +382,7 @@ it could be attributed to this?? -->
     $('#codepop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
-    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
     $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#codecloser').click(function() {
@@ -393,7 +396,7 @@ it could be attributed to this?? -->
     $('#artpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
-    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
     $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#artcloser').click(function() {
@@ -407,7 +410,7 @@ it could be attributed to this?? -->
     $('#aboutpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#aboutcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
-    $('.menu').animate({marginLeft: "-30vw"}, {duration: 50, queue: false, easing: "linear"});
+    $('.menu').animate({marginLeft: -$width}, {duration: 50, queue: false, easing: "linear"});
     $('.divider').animate({width: "0px"}, {duration: 600, queue: false, easing: "linear"});
   });
   $('#aboutcloser').click(function() {
