@@ -759,6 +759,7 @@ h1 {
   cursor: pointer;
   background-color: white;
   box-shadow: 0px 0px 4px #BEBEC6;
+  min-width: 320px;
 }
 
 .workcover {
@@ -836,6 +837,7 @@ h1 {
   width: 100%;
   height: 35vw;
   margin-left: 0px;
+  min-width: 320px;
 }
 
 .introimage {
@@ -854,6 +856,7 @@ h1 {
   height: 35vw;
   margin-left: 10vw;
   margin-top: 5vw;
+  min-width: 320px;
 }
 
 .aboutdiv {
@@ -864,12 +867,14 @@ h1 {
   width: 35vw;
   height: 45vw;
   background-color: #f85563;
+  min-width: 320px;
 }
 
 .aboutcontent {
   margin-left: 5vw;
   width: 40vw;
   height: 45vw;
+  min-width: 320px;
 }
 
 .divide {
