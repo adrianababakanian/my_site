@@ -797,7 +797,7 @@ h1 {
   min-width: 320px;
 }
 
-#intro {
+.intro {
   margin-top: 100px;
 }
 
@@ -913,6 +913,9 @@ h1 {
 }
 
 ul {
-  list-style: none;
   padding-left: 0px;
+}
+
+.tech {
+  color: #DCEBF7;
 }
