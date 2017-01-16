@@ -118,7 +118,7 @@
 
   <!-- detail section about a specific project or work -->
   <div class="workpop" id="feasterpop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="workcontent" id="intro">
       <h1> Feaster </h1>
       <p> I have been working with a UC Berkeley startup called <a href="https://www.feasterworks.com/" target="_blank">Feaster</a>, a
@@ -160,7 +160,7 @@
   </div>
 
   <div class="workpop" id="buildingspop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> Berkeley Buildings </h1>
@@ -168,7 +168,7 @@
   </div>
 
   <div class="workpop" id="gdpop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="workcontent" id="intro">
       <h1> Graphic Design </h1>
     </div>
@@ -178,7 +178,7 @@
   </div>
 
   <div class="workpop" id="innopop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> Innovative Design </h1>
@@ -186,7 +186,7 @@
   </div>
 
   <div class="workpop" id="weatherpop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> WeatherOrNot </h1>
@@ -194,7 +194,7 @@
   </div>
 
   <div class="workpop" id="personalpop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
+    <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> Personal Branding </h1>
@@ -202,7 +202,7 @@
   </div>
 
   <div class="workpop" id="weathercodepop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
+    <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> WeatherOrNot </h1>
@@ -210,7 +210,7 @@
   </div>
 
   <div class="workpop" id="feastercodepop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
+    <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> Feaster Landing Page </h1>
@@ -218,7 +218,7 @@
   </div>
 
   <div class="workpop" id="personalcodepop">
-    <div class="goback clickable"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
+    <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> Personal Site Iteration </h1>
@@ -421,14 +421,14 @@ it could be attributed to this?? -->
 
   //on and off toggle of work section
   $('.feasterwork').click(function() {
-    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    // $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
     $('#feasterpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.graphicgoback').click(function() {
     $('#feasterpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
-    $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+    // $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
   });
 
   //on and off toggle of berkeley buildings section
@@ -437,7 +437,7 @@ it could be attributed to this?? -->
     $('#buildingspop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.graphicgoback').click(function() {
     $('#buildingspop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
@@ -449,7 +449,7 @@ it could be attributed to this?? -->
     $('#gdpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.graphicgoback').click(function() {
     $('#gdpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
@@ -461,7 +461,7 @@ it could be attributed to this?? -->
     $('#innopop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.graphicgoback').click(function() {
     $('#innopop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
@@ -473,7 +473,7 @@ it could be attributed to this?? -->
     $('#weatherpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.graphicgoback').click(function() {
     $('#weatherpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
@@ -485,7 +485,7 @@ it could be attributed to this?? -->
     $('#personalpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.graphicgoback').click(function() {
     $('#personalpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#graphiccloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
@@ -497,7 +497,7 @@ it could be attributed to this?? -->
     $('#weathercodepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.codegoback').click(function() {
     $('#weathercodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
@@ -509,7 +509,7 @@ it could be attributed to this?? -->
     $('#feastercodepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.codegoback').click(function() {
     $('#feastercodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
@@ -521,7 +521,7 @@ it could be attributed to this?? -->
     $('#personalcodepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
-  $('.goback').click(function() {
+  $('.codegoback').click(function() {
     $('#personalcodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
