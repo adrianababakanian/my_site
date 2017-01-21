@@ -648,6 +648,8 @@ h1 {
   z-index: 500;
 }
 
+
+
 .circle {
   width: 0px;
   height: 0px;
@@ -694,16 +696,112 @@ h1 {
 
 
 
-.contactabout-wrapper {
+
+
+
+.contact-wrapabout {
   width: 100%;
+  height: 40px;
+}
+
+.menu-contact-wrapperabout {
+  width: 8%;
+  padding-top: 8%;
+  float: left;
+  position: relative;
+  margin-right: 15%;
+}
+
+#lastabout {
+  margin-right: 0px;
+}
+
+.menu-contactabout {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px #303030 solid;
+  z-index: 50;
+  position: absolute;
+  float: left;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-flipabout {
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 500;
+}
+
+.menu-circleabout {
+  width: 0px;
+  height: 0px;
+  background-color: #303030;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.menu-contactabout:hover {
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+}
+
+.menu-contactabout:hover .menu-circleabout {
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  border: 2px #303030 solid;
+}
+
+.menu-contactabout:hover .menu-flipabout {
+  display: block;
+  z-index: 2000;
+}
+
+.menu-hideabout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.menu-contactabout:hover .menu-hideabout {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+#contactsabout {
+  width: 100%;//356px;
+  height: 90px;//80px;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.contactabout-wrapper {
+  width: 80px;
   height: 80px;
   float: left;
   position: relative;
 }
 
 .contactabout {
-  width: 55px;
-  height: 55px;
+  width: 30px;
+  height: 30px;
   border-radius: 100%;
   border: 2px #303030 solid;
   z-index: 50;
@@ -716,8 +814,8 @@ h1 {
 }
 
 .flipabout {
-  width: 55px;
-  height: 55px;
+  width: 30px;
+  height: 30px;
   display: none;
   z-index: 500;
 }
@@ -735,14 +833,14 @@ h1 {
 }
 
 .contactabout:hover {
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   transition: .3s;
 }
 
 .contactabout:hover .circle {
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
   transition: .3s;
   border: 2px #303030 solid;
 }
@@ -757,18 +855,14 @@ h1 {
 }
 
 .hide {
-  width: 55px;
-  height: 55px;
+  width: 30px;
+  height: 30px;
   position: relative;
 }
 
 .contactabout:hover .hide {
   display: none
 }
-
-
-
-
 
 
 .sectionpop {
