@@ -2,7 +2,6 @@
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
   <link rel="stylesheet" type="text/css"
       href="https://fonts.googleapis.com/css?family=Raleway">
-</head>
 
 <body>
 
@@ -20,19 +19,19 @@
       <div class="workswrap">
         <div class="work feasterwork">
           <div class="workcover">Feaster | Visual, Marketing, & UI Design</div>
-          <img src="feaster.png">
-        </div>
-        <div class="work buildingswork" id="last">
-          <div class="workcover">Map of Berkeley | Graphic Design</div>
-          <img src="buildings.png" class="hor">
-        </div>
-        <div class="work gdwork">
-          <div class="workcover">Graphic Design & Illustration</div>
-          <img src="dragon.png">
+          <img src="feaster4.png">
         </div>
         <div class="work innowork" id="last">
           <div class="workcover">Innovative Design | Marketing Design</div>
-          <img src="dragon.png">
+          <img src="flyer.png">
+        </div>
+        <div class="work buildingswork">
+          <div class="workcover">Map of Berkeley | Graphic Design</div>
+          <img src="map.png" class="hor">
+        </div>
+        <div class="work gdwork" id="last">
+          <div class="workcover">Graphic Design & Illustration</div>
+          <img src="gd2.png">
         </div>
         <div class="work weatherwork">
           <div class="workcover">WeatherOrNot | Visual Design</div>
@@ -121,16 +120,15 @@
     <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="workcontent intro">
       <h1> Feaster </h1>
-      <p> Over the past 8 months, I have been working with <a href="https://www.feasterworks.com/" target="_blank">Feaster</a>, a
-        <a href="https://www.getfeaster.com/" target="_blank">Messenger Bot</a>
-        that provides users with custom deals and offers on local food and drink. Through Feaster I have
+      <p> Over the past 8 months, I have been working with <a href="https://www.feasterworks.com/" target="_blank">Feaster</a>, a digital marketing platform
+        that provides users with custom deals and offers on local food and drink on <a href="https://www.getfeaster.com/" target="_blank">Facebook Messenger</a>. Through Feaster I have
         had the opportunity to fully create and execute a visual identity, marketing materials,
         a landing page, and more for a project that I am very excited and honored to be an integral component of.
     </div>
     <div class="introimage-wrapper"><div class="introimage"><img src="feaster.png"></div></div>
     <div class="workcontent">
       <p> <em> <b> Please note that all materials here are copyright and property of Feaster, Inc.
-      Visit out landing page for more information. </b> </em> </p>
+      Please visit out landing page for more information. </b> </em> </p>
       <h2> Logo Iterations </h2>
       <p> My first task as a member of the Feaster team was to develop a logo to fuel all of our
         branding identity. My goal was to communicate to the user the key features that the bot delivers -- that is,
@@ -170,10 +168,16 @@
 
   <div class="workpop" id="buildingspop">
     <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
-    <div class="workcontent">
-      <h1> Berkeley Buildings </h1>
+    <div class="workcontent intro">
+      <h1> Map of Berkeley </h1>
+      <p> I love the architecture of my school. It somehow manages to be simultanously ecelectic and cohesive, and never fails to inspire me
+        regardless of how many times I walk through campus on my way to lecture or leave a building after a not-so-fun midterm. Because of it's beauty
+        I decided to make an illustrated map of UC Berkeley. Below are some of the buildings I have completed so far -- check back soon to see more of
+        our beautiful architecture and the final
+        version of the map! </p>
+      </menu>
     </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
   </div>
 
   <div class="workpop" id="gdpop">
@@ -228,14 +232,17 @@
         site in Rails and then converted it to pure HTML/CSS/JS to put up on Github pages.) Rails is the first backend framework that I have worked
         with, and it has deinitely inspired me to continue exploring backend development. </p>
       <p> WeatherOrNot began as my final group project for the Rails course mentioned above. My project parteners were Anne Lin and Michelle Han.
-        After the semester completed, I forked our project repo and continued to work on the app on my own. A few of the features I implemented are: <p>
+        After the semester completed, I forked our project repo and continued to work on the app on my own. As of now, it is still a work in progres. A few of the features
+        I have implemented and am in the process of implementing are: <p>
           <ul>
             <li> AJAX calls to a Weather API in order to gather realtime weather stats (previously, I seeded the database with random weather instances.
-              You can also see this version of the app if you want to play around with more diverse weather conditions!) </li>
-            <li> Integrated Bootstrap in order to add to the styling I previously implemneted with vanilla CSS. </li>
+              The user can select if they want to see real data or random data to play around with more diverse weather conditions.) </li>
+            <li> Integrated Bootstrap in order to add to the styling I previously implemented with vanilla CSS. </li>
             <li> Improved the UI of the daily feedback forms. </li>
-            <li> Added a calendar which users can use to access and edit their feedback forms for previous days </li>
+            <li> Added a calendar which users can use to access and edit their feedback forms from previous days </li>
           </ul>
+      <p> Please be sure to check back soon to see the final version of the app once I put it up on Heroku! </p>
+      <h2> I
     </div>
   </div>
 
@@ -249,9 +256,24 @@
 
   <div class="workpop" id="personalcodepop">
     <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
     <div class="workcontent">
       <h1> Personal Site Iteration </h1>
+      <p> I for some reason decided that it would be a good idea to build up a personal site from sratch -- no Bootstrap templates,
+        no framerworks, just a blank HTML document with equally blank stylesheets and scripts. Although I am aware that all of the resources for
+        developers out there renders this approach rather impratical, I am very glad that I did it. I've never been more confident in my understanding
+        of HTML, CSS, and JavaScript, and it was a lot of fun and extremely rewarding to be able to StackOverflow my way through every obstacle that I
+        encountered and end up with a product that is completely my own! </p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="workcontent">
+      <h2 class="tech"> Technologies: HTML, CSS, JavaScript, Sass </h2>
+      <p> During my first semester of college, I took a Decal called <em> The Web Design Decal </em>. It was in this course that I was first exposed to
+        the basics of web development. I fell in love immediately. I have been wanting to code up a personal site ever since, and I am very happy to share the
+        final result! </p>
+      <h2> The Process </h2>
+      <p> My ultimate goal with this site was to create something that fits with my style as a designer and developer. This site isn't just a place
+        to show my projects, but also one of my projects itself. </p>
+      <p> I started off by defining my color palette, settig up a layout, and choosing fonts. </p>
     </div>
   </div>
 
@@ -449,9 +471,9 @@ it could be attributed to this?? -->
     $('.wrapper').animate({marginLeft: "0px"}, {duration: 400, queue: false, easing: "linear"});
   });
 
-  //on and off toggle of work section
+  //on and off toggle of feaster design section
   $('.feasterwork').click(function() {
-    // $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#graphiccloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
     $('#feasterpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
   });
