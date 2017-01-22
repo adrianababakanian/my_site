@@ -359,10 +359,13 @@
 
   <div id="wrap">
       <div id="hello">
-        <div class="color-box clickable"></div>
+        <div id="laptop"><img src="laptop.png"></div>
+        <div id="tea"><img src="tea.png"></div>
+        <div id="pentool"><img src="pentool.png"></div>
+        <div class="color-box clickable"><div class="inner-color-box clickable"><img src="me3.png"></div></div>
         <div class="text-box">
           <h1> Hello world! </h1>
-          <p> I'm Adriana, a user experience engineer, graphic designer, and web
+          <p> I'm Adriana - a user experience engineer, graphic designer, and web
             developer studying Math & Computer Science at the University of
             California, Berkeley. If you like elephants, enamel pins, shrimp
             tempura, or string lights, consider me your new best friend. </p>
@@ -514,7 +517,7 @@ it could be attributed to this?? -->
   });
 
   //on and off toggle of about section
-  $('#nav-about, #aboutme, #aboutmenu').click(function() {
+  $('#nav-about, #aboutme, #aboutmenu, .color-box').click(function() {
     $('#aboutpop').animate({left: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('.wrapper').animate({marginLeft: "-100vw"}, {duration: 400, queue: false, easing: "linear"});
     $('#aboutcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});

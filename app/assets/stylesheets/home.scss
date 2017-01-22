@@ -156,6 +156,69 @@ img {
   height: 400px;
   background-color: #D3ECE8;
   float: left;
+  position: relative;
+  transition: .5s;
+}
+
+.inner-color-box {
+  width: 400px;
+  height:320px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .5s;
+  z-index: 5;
+}
+
+@keyframes bloop {
+  0%   {width: 400px; height: 320px;}
+  50%   {width: 405px; height: 324px;}
+  100% {width: 400px; height: 320px;}
+}
+
+.color-box:hover .inner-color-box {
+  animation: bloop .5s;
+}
+
+#laptop {
+  height: 30px;
+  width: auto;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 10px;
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
+#tea {
+  height: 35px;
+  width: auto;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-20deg);
+  margin-top: 200px;
+}
+
+#pentool {
+  height: 35px;
+  width: auto;
+  position: absolute;
+  z-index: 1;
+  margin-left: 80px;
+}
+
+@keyframes penbloop {
+  0%   {left: 0px;}
+  0%   {top: 0px;}
+  50%   {left: -100px;}
+  50%   {top: 200px;}
+  100% {left: 0px;}
+  100% {top: 0px;}
+}
+
+.color-box:hover  #pentool {
+  animation: penbloop 1s;
 }
 
 .text-box {
