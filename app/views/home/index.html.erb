@@ -21,25 +21,25 @@
           <div class="workcover">Feaster | Visual, Marketing, & UI Design</div>
           <img src="feaster4.png">
         </div>
-        <div class="work innowork" id="last">
+        <div class="work buildingswork last" id="map">
+          <div class="workcover">Map of Berkeley | Graphic Design</div>
+          <img src="map2.png" class="hor">
+        </div>
+        <div class="work innowork">
           <div class="workcover">Innovative Design | Marketing Design</div>
           <img src="flyer.png">
         </div>
-        <div class="work buildingswork">
-          <div class="workcover">Map of Berkeley | Graphic Design</div>
-          <img src="map.png" class="hor">
-        </div>
-        <div class="work gdwork" id="last">
+        <div class="work gdwork last">
           <div class="workcover">Graphic Design & Illustration</div>
           <img src="gd2.png">
         </div>
-        <div class="work weatherwork">
-          <div class="workcover">WeatherOrNot | Visual Design</div>
-          <img src="dragon.png">
-        </div>
-        <div class="work personalwork" id="last">
+        <div class="work personalwork">
           <div class="workcover">Laud'em | UI/UX & Branding Design</div>
-          <img src="laud.png">
+          <img src="laud2.png">
+        </div>
+        <div class="work weatherwork last">
+          <div class="workcover">WeatherOrNot | Visual Design</div>
+          <img src="weather.png" class="ver">
         </div>
       </div>
     </div>
@@ -225,7 +225,7 @@
         version of the map! </p>
       </menu>
     </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="map.png"></div></div>
+    <div class="introimage-wrapper"><div class="introimage map"><img src="map2.png"></div></div>
     <div class="workcontent"><h2> Doe Library </h2></div>
     <div class="introimage-wrapper"><div class="introimage"><img src="doe.png"></div></div>
     <div class="workcontent"><h2> Hearst Memorial Mining Building </h2></div>
@@ -250,8 +250,14 @@
     <div class="goback clickable graphicgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to design </p></div>
     <div class="workcontent intro">
       <h1> Innovative Design </h1>
+      <p> I joined <a href="http://innovativedesign.club/" target="_blank"> Innovative Design</a> during my Spring semester of my freshman
+        year at Cal. We are a group of creative students with the ultimate goal of making Berkeley beautiful! InnoD is organized into different tiers --
+        graphic design, photography, videography, and web design. These past two semesters, I have been a part of a graphic design tier called Gold Tier.
+        This semster, I am very excited to be on InnoD's Marketing Tier. Our client is InnoD itself -- we create marketing materials for club recruitement
+        campaigns, club events such as our <a href="http://hex.innovativedesign.club/" target="_blank"< HEX Workshops>
+        and <a href="http://cmyk.innovativedesign.club/" target="_blank" CMYK Designathon>, and more. </p>
     </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="flyers.png"></div></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="coverphoto.png" class="hor"></div></div>
   </div>
 
   <div class="workpop" id="weatherpop">
@@ -319,17 +325,34 @@
         developers out there renders this approach rather impratical, I am very glad that I did it. I've never been more confident in my understanding
         of HTML, CSS, and JavaScript, and it was a lot of fun and extremely rewarding to be able to StackOverflow my way through every obstacle that I
         encountered and end up with a product that is completely my own! </p>
+      <p> <em> Note: for now, please fullscreen your browser, since I am in the process of optimizing the responsiveness of the homepage! </em> </p>
     </div>
     <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
-    <div class="workcontent">
+    <div class="workcontent intro">
       <h2 class="tech"> Technologies: HTML, CSS, JavaScript, Sass </h2>
-      <p> During my first semester of college, I took a Decal called <em> The Web Design Decal </em>. It was in this course that I was first exposed to
+      <p> During my first semester of college, I took a course called <em> The Web Design Decal </em>. It was in this class that I was first exposed to
         the basics of web development. I fell in love immediately. I have been wanting to code up a personal site ever since, and I am very happy to share the
         final result! </p>
-      <h2> The Process </h2>
-      <p> My ultimate goal with this site was to create something that fits with my style as a designer and developer. This site isn't just a place
-        to show my projects, but also one of my projects itself. </p>
-      <p> I started off by defining my color palette, settig up a layout, and choosing fonts. </p>
+      <h2 class="tech"> The Process </h2>
+      <p> My ultimate goal with this site was to create something that fits with my style as both a designer and developer. This site isn't just a place
+        to showcase my projects, but also one of my projects itself. </p>
+      <p> I started off by defining my color palette, settig up a layout, and choosing fonts. I also made some fun icons that pop up throughtout the site,
+        adding an element of interactiveness to make the site more than just a static portfolio.</p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"></div></div>
+    <div class="workcontent">
+      <p> The layout I started out with was a very basic one. I had a standard navbar dividing the site up into a few
+        different categories, and clicking on each link led to a different page. After implementing this layout, I
+        got pretty bored of looking at it. I wanted instead something that was a bit more fluid, a bit more interactive,
+        and a lot more fun. So I decide to reimplement the layout into a one page site </p>
+      <p> Currently, all of the content is "stored" either off to the side or at the bottom of the viewport. I implemented page
+        transitions using a combination of CSS and jQuery animations. A menu is also "stored" to the left of the viewport, which
+        a visitor to my site can also use to navigate from section to section. </p>
+      <h2 class="tech"> Conclusion </h2>
+      <p> I had a lot of fun implementing this site. I feel so much more confident in not only my web devleopment abilities,
+        but also my problem-solving abilities in both coding and learning in general. </p>
+      <p> I'm happy to say that I was able to create a product that feels very "me," and I'm now even more exited to keep
+        learning and developing. </p>
     </div>
   </div>
 
@@ -359,10 +382,12 @@
 
   <div id="wrap">
       <div id="hello">
-        <div id="laptop"><img src="laptop.png"></div>
-        <div id="tea"><img src="tea.png"></div>
-        <div id="pentool"><img src="pentool.png"></div>
-        <div class="color-box clickable"><div class="inner-color-box clickable"><img src="me3.png"></div></div>
+        <div class="color-box clickable">
+          <div id="laptop"><img src="laptop.png"></div>
+          <div id="tea"><img src="tea.png"></div>
+          <div id="pentool"><img src="pentool.png"></div>
+          <div class="inner-color-box clickable"><img src="me3.png"></div>
+        </div>
         <div class="text-box">
           <h1> Hello world! </h1>
           <p> I'm Adriana - a user experience engineer, graphic designer, and web

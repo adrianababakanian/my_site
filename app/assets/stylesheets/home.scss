@@ -217,8 +217,7 @@ img {
   100% {top: 0px;}
 }
 
-.color-box:hover  #pentool {
-  animation: penbloop 1s;
+.color-box:hover ~ #pentool {
 }
 
 .text-box {
@@ -990,6 +989,14 @@ h1 {
   height: auto;
 }
 
+.map {
+  background-color: #EEEEEE;
+}
+
+#map {
+  background-color: #EEEEEE;
+}
+
 .work {
   width: 38vw;
   height: 27vw;
@@ -1067,7 +1074,7 @@ h1 {
 }
 
 .goback:hover {
-  color: #939393;
+  opacity: .6;
 }
 
 .up {
