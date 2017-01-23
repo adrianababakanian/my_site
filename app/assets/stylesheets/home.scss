@@ -1478,6 +1478,27 @@ h1 {
   min-width: 320px;
 }
 
+.workcontent a:link{
+  color: #ABC6D8;
+  text-decoration: none;
+}
+
+.workcontent a:visited{
+  color: #ABC6D8;
+  text-decoration: none;
+}
+
+.workcontent a:hover{
+  color: #ABC6D8;
+  opacity: .5;
+  text-decoration: none;
+}
+
+.workcontent a:active{
+  color: #ABC6D8;
+  text-decoration: none;
+}
+
 .intro {
   margin-top: 100px;
 }
@@ -1539,18 +1560,51 @@ h1 {
   min-width: 320px;
 }
 
+.randimage-wrapper {
+  width: 100%;
+  height: 35vw;
+  margin-left: 0px;
+  min-width: 320px;
+}
+
+.longimage-wrapper {
+  width: 100%;
+  height: 20vw;
+  margin-left: 0px;
+  min-width: 320px;
+}
+
 .introimage {
   width: 80vw;
   height: 35vw;
   margin-top: 20px;
   margin-left: 10vw;
   position: relative;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // box-shadow: 0px 0px 8px #BEBEC6;
   outline-style: solid;
   outline-color: #DCEBF7;
   outline-width: 1px;
+}
+
+.randimage {
+  width: 80vw;
+  height: 35vw;
+  margin-top: 20px;
+  margin-left: 10vw;
+  position: relative;
+}
+
+.longimage {
+  width: 80vw;
+  height: 20vw;
+  margin-top: 20px;
+  margin-left: 10vw;
+  position: relative;
+}
+
+.noborder {
+  outline-style: none;
+  outline-color: none;
+  outline-width: 0px;
 }
 
 .about-wrapper {
@@ -1593,6 +1647,15 @@ h1 {
   min-width: 320px;
 }
 
+.inneraboutphoto {
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+}
+
 .aboutcontent {
   margin-left: 5vw;
   width: 40vw;
@@ -1619,5 +1682,6 @@ ul {
 }
 
 .tech {
-  color: #DCEBF7;
+  // color: #DCEBF7;
+  color: #ABC6D8;
 }
