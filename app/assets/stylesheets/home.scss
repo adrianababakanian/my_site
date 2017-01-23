@@ -1474,11 +1474,18 @@ h1 {
   top: 100vh;
 }
 
+.gdpop-wrapper {
+  overflow: hidden;
+}
+
 .workcontent {
   width: 80vw;
-  margin-top: 50px;
   margin-left: 10vw;
   min-width: 320px;
+}
+
+.topper {
+  margin-top: 50px;
 }
 
 .workcontent a:link{
@@ -1544,7 +1551,7 @@ h1 {
   opacity: .6;
 }
 
-.goback:hover .gobacktext {
+.goback:hover p {
   opacity: .6;
 }
 
@@ -1593,6 +1600,10 @@ h1 {
   background-color: #525352;
 }
 
+.pig {
+  background-color: #F7EDED;
+}
+
 .randimage {
   width: 80vw;
   height: 35vw;
@@ -1621,6 +1632,10 @@ h1 {
   margin-left: 10vw;
   margin-top: 5vw;
   min-width: 320px;
+}
+
+.bottom {
+  margin-bottom: 100px;
 }
 
 #aboutpop {
