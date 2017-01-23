@@ -133,21 +133,21 @@
       <p> Click to explore some of my paintings, mixed media compositions, and other fine art works. </p>
     </div>
     <div class="workswrap">
-      <div class="work">
+      <div class="work alicework">
         <div class="workcover">Alice In Wonderland</div>
         <img src="arts.png" class="hor">
       </div>
-      <div class="work" id="last">
-        <div class="workcover">hello</div>
+      <div class="work interconnectedwork" id="last">
+        <div class="workcover">Interconnected</div>
+        <img src="interconnected.png" class="hor">
+      </div>
+      <div class="work woodenwork">
+        <div class="workcover">Wooden</div>
         <img src="wood.png" class="hor">
       </div>
-      <div class="work">
-        <div class="workcover">hello</div>
+      <div class="work robotswork" id="last">
+        <div class="workcover">Robots</div>
         <img src="robot.png" class="hor">
-      </div>
-      <div class="work" id="last">
-        <div class="workcover">hello</div>
-        <img src="dragon.png">
       </div>
     </div>
   </div>
@@ -503,6 +503,26 @@
     </div>
   </div>
 
+  <div class="workpop" id="alicepop">
+    <div class="goback clickable artgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
+    <div class="artwork-wrapper"><img src="arts.png"></div>
+  </div>
+
+  <div class="workpop" id="interconnectedpop">
+    <div class="goback clickable artgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
+    <div class="artwork-wrapper"><img src="interconnected.png"></div>
+  </div>
+
+  <div class="workpop" id="woodenpop">
+    <div class="goback clickable artgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
+    <div class="artwork-wrapper"><img src="wood.png"></div>
+  </div>
+
+  <div class="workpop" id="robotspop">
+    <div class="goback clickable artgoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to fine art </p></div>
+    <div class="artwork-wrapper"><img src="robot.png"></div>
+  </div>
+
   <div class="wrapper">
 
   <div class="nav">
@@ -809,6 +829,54 @@ it could be attributed to this?? -->
     $('#personalcodepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
     $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
     $('#codecloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of alice in wonderland section
+  $('.alicework').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#alicepop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#alicepop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of interconnected section
+  $('.interconnectedwork').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#interconnectedpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#interconnectedpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of wooden section
+  $('.woodenwork').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#woodenpop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#woodenpop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
+  });
+
+  //on and off toggle of robots section
+  $('.robotswork').click(function() {
+    $('#artcloser').animate({top: "-60px"}, {duration: 200, queue: true, easing: "linear"});
+    $('#robotspop').animate({top: "0px"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "100vh"}, {duration: 100, queue: false, easing: "linear"});
+  });
+  $('.artgoback').click(function() {
+    $('#robotspop').animate({top: "100vh"}, {duration: 300, queue: false, easing: "linear"});
+    $('.sectionwrap').animate({top: "0px"}, {duration: 400, queue: false, easing: "linear"});
+    $('#artcloser').animate({top: "3vh"}, {duration: 200, queue: true, easing: "linear"});
   });
 
 </script>
