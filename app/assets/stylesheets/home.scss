@@ -399,6 +399,7 @@ a:active {
 .wrapper {
   width: 100vw;
   margin-left: 0px;
+  overflow: hidden;
 }
 
 .work-cover {
@@ -1101,6 +1102,7 @@ h1 {
   background-color: #DCEBF7;
   margin-top: 100px;
   text-align: center;
+  overflow: hidden;
 }
 
 #contacts {
@@ -1615,6 +1617,10 @@ h1 {
   margin-left: 10vw;
   margin-top: 5vw;
   min-width: 320px;
+}
+
+#aboutpop {
+  overflow: hidden;
 }
 
 .about-wrapper a:link {
