@@ -1584,6 +1584,7 @@ h1 {
   outline-style: solid;
   outline-color: #DCEBF7;
   outline-width: 1px;
+  overflow: hidden;
 }
 
 .randimage {
@@ -1675,12 +1676,11 @@ h1 {
   font-family: PT Serif;
   font-size: 18px;
   font-style: italic;
-  margin-top: 20px;
 }
 
-ul {
-  padding-left: 0px;
-}
+// ul {
+//   padding-left: 0px;
+// }
 
 .tech {
   // color: #DCEBF7;

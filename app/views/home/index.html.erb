@@ -112,17 +112,17 @@
       <p> Click to explore some of my sites and webapps. </p>
     </div>
     <div class="workswrap">
+      <div class="work feastercodework">
+        <div class="workcover">Feaster Landing Page</div>
+        <img src="feastermockup.png">
+      </div>
+      <div class="work personalcodework" id="last">
+        <div class="workcover">Personal Site Iteration</div>
+        <img src="mysite.png" class="hor">
+      </div>
       <div class="work weathercodework">
         <div class="workcover">WeatherOrNot</div>
-        <img src="weathersite.png">
-      </div>
-      <div class="work feastercodework" id="last">
-        <div class="workcover">Feaster Landing Page</div>
-        <img src="feastersite.png">
-      </div>
-      <div class="work personalcodework">
-        <div class="workcover">Personal Site Iteration</div>
-        <img src="buildings.png" class="hor">
+        <img src="weathermockup2.png">
       </div>
     </div>
   </div>
@@ -160,7 +160,7 @@
         <h1 style="margin-top: 20px"> Adriana Babakanian </h1>
         <div class="divide"></div>
         <h3> I'm a second year Regents' Scholar at UC Berkeley pursuing
-          a double major in Applied Mathematics & Computer Science. I have a keen passion for creating, especially when it comes to things
+          a double major in Applied Mathematics & Computer Science. I have a keen passion for creating, especially when it comes to human-centered products
           that lie at the intersection of design and technology.
         </h3>
         <p style="margin-top:40px"> I love doodling on my drawing tablet, developing websites,
@@ -346,8 +346,8 @@
     <div class="workcontent intro">
       <h1> Innovative Design </h1>
       <p> I joined <a href="http://innovativedesign.club/" target="_blank"> Innovative Design</a> during my Spring semester of my freshman
-        year at Cal. We are a creative agency of innovative students with the ultimate goal of making Berkeley beautiful! InnoD is organized into different tiers &mdash;
-        graphic design, photography, videography, and web design. These past two semesters, I have been a part of a graphic design tier called Gold Tier.
+        year at Cal. We are UC Berkeley's premier creative agency, and our purpose is making Berkeley beautiful! InnoD is organized into different tiers &mdash;
+        graphic design, photography, videography, and web design. These last two semesters, I was a part of a graphic design tier called Gold Tier.
         This semster, I am very excited to be on InnoD's Marketing Tier. Our client is InnoD itself &mdash; we create marketing materials for club recruitement
         campaigns, club events such as our <a href="http://hex.innovativedesign.club/" target="_blank"> HEX Workshops</a>
         & <a href="http://cmyk.innovativedesign.club/" target="_blank"> CMYK Designathon</a>, and more. </p>
@@ -395,31 +395,30 @@
     <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
     <div class="workcontent intro">
       <h1> WeatherOrNot </h1>
-      <p> This project is a Rails webapp called WeatherOrNot, an applictaion that uses user feedback forms to create for users
-        personalized suggestions about what to wear based on the weather for the current day. The inspiration behind the app is that, rather often,
+      <p> This project is a Rails webapp called WeatherOrNot, an applictaion that utilizes user feedback forms to create
+        personalized suggestions about what to wear based on the weather of a given day. The inspiration behind the app is that, rather often,
         the same weather conditions feel quite different for different people. WeatherOrNot is a way for users to always know how to dress prepared
-        without having to take time out of their morning rotinues. </p>
+        without having to take any extra time out of their morning rotinues. </p>
     </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="login.png" class="hor"></div></div>
     <div class="workcontent">
       <h2 class="tech"> Technologies: Ruby on Rails, Sass, Twitter Bootstrap </h2>
       <p> This past semester I took a course about Ruby on Rails. The course covered many of the integral features and powers
         of the "Rails magic," and I loved it so much that I have started working on developing some side projects on my own
         using the Rails framework. (In fact, I have gotten so used to firing up the Rails server that I initially developed this
-        site in Rails and then converted it to pure HTML/CSS/JS to put up on Github pages.) Rails is the first backend framework that I have worked
-        with, and it has deinitely inspired me to continue exploring backend development. </p>
-      <p> WeatherOrNot began as my final group project for the Rails course mentioned above. My project parteners were Anne Lin and Michelle Han.
+        site in Rails and then converted it to pure HTML/CSS/JS to put up on Github pages.) Rails is the first backend framework that I worked
+        with, and it has definitely inspired me to continue exploring backend development. </p>
+      <p> WeatherOrNot began as my final group project for the Rails course mentioned above.
         After the semester completed, I forked our project repo and continued to work on the app on my own. As of now, it is still a work in progres. A few of the features
         I have implemented and am in the process of implementing are: <p>
           <ul>
-            <li> AJAX calls to a Weather API in order to gather realtime weather stats (previously, I seeded the database with random weather instances.
+            <li> AJAX calls to a Weather API in order to gather realtime weather stats (Previously, I seeded the database with random weather instances.
               The user can select if they want to see real data or random data to play around with more diverse weather conditions.) </li>
-            <li> Integrated Bootstrap in order to add to the styling I previously implemented with vanilla CSS. </li>
+            <li> Integrated Bootstrap to add to the styling I previously implemented with vanilla CSS. </li>
             <li> Improved the UI of the daily feedback forms. </li>
-            <li> Added a calendar which users can use to access and edit their feedback forms from previous days </li>
+            <li> Added a calendar which can be used to access and edit feedback forms from previous days. </li>
           </ul>
       <p> Please be sure to check back soon to see the final version of the app once I put it up on Heroku! </p>
-      <h2 class="tech"> I
     </div>
   </div>
 
@@ -427,8 +426,34 @@
     <div class="goback clickable codegoback"><div class="up"><img src="up.png" class="x"></div><p style="margin-top:0px"> back to code </p></div>
     <div class="workcontent intro">
       <h1> Feaster Landing Page </h1>
+      <p> As part of my role as Feaster's Marketing & Branding Designer, I created a <a href="https://www.feasterworks.com" target="_blank">landing page</a> to provide businesses with information about the services and benefits
+        that Feaster provides. I created all of the icons and illustrations on the page, made mockups of the layout, and added CSS styling to the site. Overall I had a
+        lot of fun with this project because it allowed me to utilize both my graphic design and web development skillsets, as well as create a product that realworld
+        businesses are accessing and using. </p>
     </div>
-    <div class="introimage-wrapper"><div class="introimage"><img src="marketing.png"></div></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="feaster6.png"></div></div>
+    <div class="workcontent">
+      <h2 class="tech"> Technologies: Adobe Illustrator, Sketch, CSS </h2>
+      <h2 class="tech"> Layout Design </h2>
+      <p> From the very beginning, I knew that the most important aspect of the landing page design would be presenting the benefits of Feaster in sections
+        that would be easy to parse for the visitor. I prioritized clean diagrams and concise icons as a way to emphasize the information that would be conveyed
+        through the accompying text. Below are some of the mockups I made in Sketch if the aforementioned sections. </p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="perfectmatch.png" class="hor"></div></div>
+    <div class="caption"> <p><em> A section outlining some of Feaster's distinctive features that separates it from all other
+      marketing options available to restaurant businesses. </em> </p></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="getoutof.png" class="hor"></div></div>
+    <div class="caption"> <p><em> A section outlining the results a business would see by using Feaster as their marketing tool. </em> </p></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="todo.png"></div></div>
+    <div class="caption"> <p><em> A simple timeline outlining how a business would set up and use Feaster. </em> </p></div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="fly.png" class="hor"></div></div>
+    <div class="caption"> <p><em> An illustration demonstrating to a business that deals they set up from their personal dashboard are delivered to users on Facebook Messenger. </em> </p></div>
+    <div class="workcontent">
+      <h2 class="tech">Visual Design</h2>
+      <p> My goal was for the site to feel bustling and alive, and I thus illustrated a city filled with restaurants offering deals on Feaster to be the background image. </p>
+    </div>
+    <div class="introimage-wrapper"><div class="introimage"><img src="cityscape.png" class="hor"></div></div>
+    <div class="caption"> <p><em> Cityscape illustration full of restaurants signed up on Feaster! </em> </p></div>
   </div>
 
   <div class="workpop" id="personalcodepop">
@@ -614,6 +639,7 @@ it could be attributed to this?? -->
 
   //jQuery variable definition
   var $width = $('.menu').width();
+
 
   //on and off toggle of design section
   $('#graphic, #graphicmenu').click(function() {
